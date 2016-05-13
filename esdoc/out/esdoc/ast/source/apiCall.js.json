@@ -1,0 +1,203 @@
+{
+  "type": "Program",
+  "body": [],
+  "sourceType": "module",
+  "range": [
+    827,
+    827
+  ],
+  "loc": {
+    "start": {
+      "line": 26,
+      "column": 3
+    },
+    "end": {
+      "line": 26,
+      "column": 3
+    }
+  },
+  "leadingComments": [
+    {
+      "type": "Block",
+      "value": "*\n * Created by priyanka on 22/4/16.\n ",
+      "range": [
+        0,
+        42
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * fBird is another global object including various calls like GET and POST calls.\n * @typedef {Object} fBird\n ",
+      "range": [
+        43,
+        160
+      ],
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * fBird.get takes the auth Token and does the authentication for the user.\n * @typedef  { } fBird.get Execute a GET request.\n * @property {string} path To the requested resource\n * @property {object} [params] Object of additional parameters\n ",
+      "range": [
+        162,
+        411
+      ],
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 14,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * fBird.post returns with a request call on the pricing endpoint.\n * @typedef  { } fBird.post Execute a PUT request.\n * @property {string} path To the requested resource\n * @property {object} [params] Object of additional parameters\n ",
+      "range": [
+        413,
+        654
+      ],
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * XMLHttpRequest is a global object with a Fake XMLHttpRequest function ( useFakeXMLHttpRequest() ) to run the SDK test cases.\n * @typedef {Object} XMLHttpRequest\n ",
+      "range": [
+        656,
+        827
+      ],
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 26,
+          "column": 3
+        }
+      }
+    }
+  ],
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\n * Created by priyanka on 22/4/16.\n ",
+      "range": [
+        0,
+        42
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * fBird is another global object including various calls like GET and POST calls.\n * @typedef {Object} fBird\n ",
+      "range": [
+        43,
+        160
+      ],
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * fBird.get takes the auth Token and does the authentication for the user.\n * @typedef  { } fBird.get Execute a GET request.\n * @property {string} path To the requested resource\n * @property {object} [params] Object of additional parameters\n ",
+      "range": [
+        162,
+        411
+      ],
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 14,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * fBird.post returns with a request call on the pricing endpoint.\n * @typedef  { } fBird.post Execute a PUT request.\n * @property {string} path To the requested resource\n * @property {object} [params] Object of additional parameters\n ",
+      "range": [
+        413,
+        654
+      ],
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * XMLHttpRequest is a global object with a Fake XMLHttpRequest function ( useFakeXMLHttpRequest() ) to run the SDK test cases.\n * @typedef {Object} XMLHttpRequest\n ",
+      "range": [
+        656,
+        827
+      ],
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 26,
+          "column": 3
+        }
+      }
+    }
+  ]
+}

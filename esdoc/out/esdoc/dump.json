@@ -1,0 +1,4721 @@
+[
+  {
+    "__docId__": 0,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/APIFunc.js",
+    "memberof": null,
+    "longname": "src/APIFunc.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 13,
+    "content": "/**\n * Created by priyanka on 25/4/16.\n */\n/**\n * request() Executes the public API's request. With the Data and URL it calls for the sendAndFollow method.\n * @param  {String} method HTTP method\n * @param  {String} path The resource's path\n * @param {object} data Data to send along with the request\n * @param {String} accessToken  Auth token for authentication\n * @param  {String} headerChange Parameters that will be sent\n * @return {Promise}\n */\nexport function request(method, path, data, accessToken, headerChange = {} = () => {}) {\n}\n\n/**\n * sendAndFollow() executes the public API's request. With the params passed from request(), it hits the API to get a response.\n * It parses the object data with the help of parseRequest() and parseResponse() data.\n * @param  {String}     method    The HTTP method (GET, POST, PUT, DELETE)\n * @param  {String}     url       The resource's url\n * @param  {Object}     data      Data to send along with the request\n * @param  {String}  accessToken  Authentication token for authentication\n * @param  {String} headerChange Parameters that will be sent\n * @return {Promise}\n */\nexport function sendAndFollow(method, url, data, accessToken, headerChange) {\n}\n\n/**\n * parseRequest() parses the public API's request. It stringifies the object data.\n * @param  {object} data The original XMLHttpRequest\n * @return {String}  Stringify the original XMLHttpRequest\n */\nexport function parseRequest(data) {\n}\n\n/**\n * sendRequest() executes the public API's request and returns the response.\n * @param  {String}     method    The HTTP method (GET, POST, PUT, DELETE)\n * @param  {String}     url       The resource's url\n * @param  {String}     requestData      Data to send along with the request\n * @param  {String}  accessToken  Authentication token for authentication\n * @param  {String} headerChange Parameters that will be sent\n * @return {Promise}\n */\nexport function sendRequest(method, url, requestData, accessToken, headerChange) {\n}\n\n\n/**\n * parseResponse() is for parsing the response received from the request.\n * @param  {String}     responseText    The API raw response\n * @param  {XMLHttpRequest}     request       The original XMLHttpRequest\n * @return {Object({json, error})} Parses the public API's response and constructs error messages\n */\nexport function parseResponse(responseText, request) {}\n\n"
+  },
+  {
+    "__docId__": 1,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "request",
+    "memberof": "src/APIFunc.js",
+    "longname": "src/APIFunc.js~request",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/APIFunc.js",
+    "importStyle": "{request}",
+    "description": "request() Executes the public API's request. With the Data and URL it calls for the sendAndFollow method.",
+    "lineNumber": 13,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "method",
+        "description": "HTTP method"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "The resource's path"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "Data to send along with the request"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "accessToken",
+        "description": "Auth token for authentication"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "headerChange",
+        "description": "Parameters that will be sent"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 2,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "sendAndFollow",
+    "memberof": "src/APIFunc.js",
+    "longname": "src/APIFunc.js~sendAndFollow",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/APIFunc.js",
+    "importStyle": "{sendAndFollow}",
+    "description": "sendAndFollow() executes the public API's request. With the params passed from request(), it hits the API to get a response.\nIt parses the object data with the help of parseRequest() and parseResponse() data.",
+    "lineNumber": 26,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "method",
+        "description": "The HTTP method (GET, POST, PUT, DELETE)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "The resource's url"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "Data to send along with the request"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "accessToken",
+        "description": "Authentication token for authentication"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "headerChange",
+        "description": "Parameters that will be sent"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 3,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "parseRequest",
+    "memberof": "src/APIFunc.js",
+    "longname": "src/APIFunc.js~parseRequest",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/APIFunc.js",
+    "importStyle": "{parseRequest}",
+    "description": "parseRequest() parses the public API's request. It stringifies the object data.",
+    "lineNumber": 34,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "The original XMLHttpRequest"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": "Stringify the original XMLHttpRequest"
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 4,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "sendRequest",
+    "memberof": "src/APIFunc.js",
+    "longname": "src/APIFunc.js~sendRequest",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/APIFunc.js",
+    "importStyle": "{sendRequest}",
+    "description": "sendRequest() executes the public API's request and returns the response.",
+    "lineNumber": 46,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "method",
+        "description": "The HTTP method (GET, POST, PUT, DELETE)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "The resource's url"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "requestData",
+        "description": "Data to send along with the request"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "accessToken",
+        "description": "Authentication token for authentication"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "headerChange",
+        "description": "Parameters that will be sent"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 5,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "parseResponse",
+    "memberof": "src/APIFunc.js",
+    "longname": "src/APIFunc.js~parseResponse",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/APIFunc.js",
+    "importStyle": "{parseResponse}",
+    "description": "parseResponse() is for parsing the response received from the request.",
+    "lineNumber": 56,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "responseText",
+        "description": "The API raw response"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "XMLHttpRequest"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "request",
+        "description": "The original XMLHttpRequest"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object({json, error})"
+      ],
+      "spread": false,
+      "description": "Parses the public API's response and constructs error messages"
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 6,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/DOBClass.js",
+    "memberof": null,
+    "longname": "src/DOBClass.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 7,
+    "content": "/**\n * Created by priyanka on 18/4/16.\n */\n/**\n * Date of birth Details - gives the DOB for the passenger\n */\nexport default class DateOfBirth {\n/**\n * @param {number} year - birth year of the passenger\n * @param {number} month - birth month of the passenger\n * @param {number} day - birth date of the passenger\n **/\n    constructor(year, month, day) {\n        this._year = year;\n        this._month = month;\n        this._day = day;\n    }\n}"
+  },
+  {
+    "__docId__": 7,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "DateOfBirth",
+    "memberof": "src/DOBClass.js",
+    "longname": "src/DOBClass.js~DateOfBirth",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/DOBClass.js",
+    "importStyle": "DateOfBirth",
+    "description": "Date of birth Details - gives the DOB for the passenger",
+    "lineNumber": 7,
+    "interface": false
+  },
+  {
+    "__docId__": 8,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/DOBClass.js~DateOfBirth",
+    "longname": "src/DOBClass.js~DateOfBirth#constructor",
+    "access": null,
+    "description": "",
+    "lineNumber": 13,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "year",
+        "description": "birth year of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "month",
+        "description": "birth month of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "day",
+        "description": "birth date of the passenger"
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 9,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_year",
+    "memberof": "src/DOBClass.js~DateOfBirth",
+    "longname": "src/DOBClass.js~DateOfBirth#_year",
+    "access": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 10,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_month",
+    "memberof": "src/DOBClass.js~DateOfBirth",
+    "longname": "src/DOBClass.js~DateOfBirth#_month",
+    "access": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 11,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_day",
+    "memberof": "src/DOBClass.js~DateOfBirth",
+    "longname": "src/DOBClass.js~DateOfBirth#_day",
+    "access": null,
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 12,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/DateClass.js",
+    "memberof": null,
+    "longname": "src/DateClass.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 7,
+    "content": "/**\n * Created by priyanka on 18/4/16.\n */\n/**\n * Flight booking date Details\n */\nexport default class Date {\n    /**\n     * @param {number} year - year of booking\n     * @param {number} month - month of booking\n     * @param {number} day - date of booking\n     **/\n\n    constructor(year, month, day) {\n        this._year = year;\n        this._month = month;\n        this._day = day;\n    }\n}"
+  },
+  {
+    "__docId__": 13,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "Date",
+    "memberof": "src/DateClass.js",
+    "longname": "src/DateClass.js~Date",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/DateClass.js",
+    "importStyle": "Date",
+    "description": "Flight booking date Details",
+    "lineNumber": 7,
+    "interface": false
+  },
+  {
+    "__docId__": 14,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/DateClass.js~Date",
+    "longname": "src/DateClass.js~Date#constructor",
+    "access": null,
+    "description": "",
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "year",
+        "description": "year of booking"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "month",
+        "description": "month of booking"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "day",
+        "description": "date of booking"
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 15,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_year",
+    "memberof": "src/DateClass.js~Date",
+    "longname": "src/DateClass.js~Date#_year",
+    "access": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 16,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_month",
+    "memberof": "src/DateClass.js~Date",
+    "longname": "src/DateClass.js~Date#_month",
+    "access": null,
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 17,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_day",
+    "memberof": "src/DateClass.js~Date",
+    "longname": "src/DateClass.js~Date#_day",
+    "access": null,
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 18,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/FlightClass.js",
+    "memberof": null,
+    "longname": "src/FlightClass.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 7,
+    "content": "/**\n * Created by priyanka on 18/4/16.\n */\n/**\n * Flight Details - gives the details of the flight\n */\nexport default class Flight {\n    /**\n     * @param {number} airlineCode - Airline code of the flight\n     * @param {number} flightNumber - Flight number of the flight\n     * @param {string} date - Departure date (format: YYYY-MM-DD)\n     **/\n    constructor(airlineCode, flightNumber, date) {\n        this._airlineCode = airlineCode;\n        this._flightNumber = flightNumber;\n        this._date = date;\n    }\n}"
+  },
+  {
+    "__docId__": 19,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "Flight",
+    "memberof": "src/FlightClass.js",
+    "longname": "src/FlightClass.js~Flight",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/FlightClass.js",
+    "importStyle": "Flight",
+    "description": "Flight Details - gives the details of the flight",
+    "lineNumber": 7,
+    "interface": false
+  },
+  {
+    "__docId__": 20,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/FlightClass.js~Flight",
+    "longname": "src/FlightClass.js~Flight#constructor",
+    "access": null,
+    "description": "",
+    "lineNumber": 13,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "airlineCode",
+        "description": "Airline code of the flight"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "flightNumber",
+        "description": "Flight number of the flight"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "date",
+        "description": "Departure date (format: YYYY-MM-DD)"
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 21,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_airlineCode",
+    "memberof": "src/FlightClass.js~Flight",
+    "longname": "src/FlightClass.js~Flight#_airlineCode",
+    "access": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 22,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_flightNumber",
+    "memberof": "src/FlightClass.js~Flight",
+    "longname": "src/FlightClass.js~Flight#_flightNumber",
+    "access": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 23,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_date",
+    "memberof": "src/FlightClass.js~Flight",
+    "longname": "src/FlightClass.js~Flight#_date",
+    "access": null,
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 24,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/LegClass.js",
+    "memberof": null,
+    "longname": "src/LegClass.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 7,
+    "content": "/**\n * Created by priyanka on 18/4/16.\n */\n/**\n * A leg is the smallest unit of travel, in the case of a flight a takeoff immediately followed by a landing at two set points on a particular carrier with a particular flight number.\n */\nexport default class Leg {\n    /**\n     * @param {string} aircraft - Aircraft is flying between an origin and destination.\n     * @param {string} arrival - Flight arrival date in Jodatime format\n     * @param {string} departure - Flight departure date in Jodatime format\n     * @param {string} origin - Source origin of the flight\n     * @param {string} destination - Flight Destination\n     * @param {string} operatingDisclosure - Department of Transportation disclosure information on the actual operator of a flight in a code share.\n     * @param {boolean} changePlane - Whether the passenger(s) have to change planes following this leg. Only applies to the next leg.\n     * @param {string} data - [OPTIONAL] any client specific key-value pair specific to leg\n     **/\n    constructor(aircraft, arrival, departure, origin, destination, operatingDisclosure, changePlane, data) {\n        this._aircraft = aircraft;\n        this._arrival = arrival;\n        this._departure = departure;\n        this._origin = origin;\n        this._destination = destination;\n        this._operatingDisclosure = operatingDisclosure;\n        this._changePlane = changePlane;\n        this._data = data;\n    }\n}"
+  },
+  {
+    "__docId__": 25,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "Leg",
+    "memberof": "src/LegClass.js",
+    "longname": "src/LegClass.js~Leg",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/LegClass.js",
+    "importStyle": "Leg",
+    "description": "A leg is the smallest unit of travel, in the case of a flight a takeoff immediately followed by a landing at two set points on a particular carrier with a particular flight number.",
+    "lineNumber": 7,
+    "interface": false
+  },
+  {
+    "__docId__": 26,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/LegClass.js~Leg",
+    "longname": "src/LegClass.js~Leg#constructor",
+    "access": null,
+    "description": "",
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "aircraft",
+        "description": "Aircraft is flying between an origin and destination."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arrival",
+        "description": "Flight arrival date in Jodatime format"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "departure",
+        "description": "Flight departure date in Jodatime format"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "origin",
+        "description": "Source origin of the flight"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "destination",
+        "description": "Flight Destination"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "operatingDisclosure",
+        "description": "Department of Transportation disclosure information on the actual operator of a flight in a code share."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "changePlane",
+        "description": "Whether the passenger(s) have to change planes following this leg. Only applies to the next leg."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "[OPTIONAL] any client specific key-value pair specific to leg"
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 27,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_aircraft",
+    "memberof": "src/LegClass.js~Leg",
+    "longname": "src/LegClass.js~Leg#_aircraft",
+    "access": null,
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 28,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_arrival",
+    "memberof": "src/LegClass.js~Leg",
+    "longname": "src/LegClass.js~Leg#_arrival",
+    "access": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 29,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_departure",
+    "memberof": "src/LegClass.js~Leg",
+    "longname": "src/LegClass.js~Leg#_departure",
+    "access": null,
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 30,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_origin",
+    "memberof": "src/LegClass.js~Leg",
+    "longname": "src/LegClass.js~Leg#_origin",
+    "access": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 31,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_destination",
+    "memberof": "src/LegClass.js~Leg",
+    "longname": "src/LegClass.js~Leg#_destination",
+    "access": null,
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 32,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_operatingDisclosure",
+    "memberof": "src/LegClass.js~Leg",
+    "longname": "src/LegClass.js~Leg#_operatingDisclosure",
+    "access": null,
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 33,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_changePlane",
+    "memberof": "src/LegClass.js~Leg",
+    "longname": "src/LegClass.js~Leg#_changePlane",
+    "access": null,
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 34,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_data",
+    "memberof": "src/LegClass.js~Leg",
+    "longname": "src/LegClass.js~Leg#_data",
+    "access": null,
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 35,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/PassengerCountClass.js",
+    "memberof": null,
+    "longname": "src/PassengerCountClass.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 8,
+    "content": "/**\n * Created by priyanka on 18/4/16.\n */\n/**\n * Passenger count - stores the count of passengers, categorizing them under the head of Infant, Child,\n * adult or senior citizen.\n */\nexport default class PassengerCount {\n    /**\n     * @param {number} adult - Count of adult passengers\n     * @param {number} child - Count of child passengers\n     * @param {number} infantInLap - Count of infant in lap passengers\n     * @param {number} infantInSeat - Count of infant in seat passengers\n     * @param {number} senior - Count of senior passengers\n     **/\n    constructor(adult, child, infantInLap, infantInSeat, senior) {\n        this._adult = adult;\n        this._child = child;\n        this._infantInLap = infantInLap;\n        this._infantInSeat = infantInSeat;\n        this._senior = senior;\n    }\n}"
+  },
+  {
+    "__docId__": 36,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "PassengerCount",
+    "memberof": "src/PassengerCountClass.js",
+    "longname": "src/PassengerCountClass.js~PassengerCount",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/PassengerCountClass.js",
+    "importStyle": "PassengerCount",
+    "description": "Passenger count - stores the count of passengers, categorizing them under the head of Infant, Child,\nadult or senior citizen.",
+    "lineNumber": 8,
+    "interface": false
+  },
+  {
+    "__docId__": 37,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/PassengerCountClass.js~PassengerCount",
+    "longname": "src/PassengerCountClass.js~PassengerCount#constructor",
+    "access": null,
+    "description": "",
+    "lineNumber": 16,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "adult",
+        "description": "Count of adult passengers"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "child",
+        "description": "Count of child passengers"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "infantInLap",
+        "description": "Count of infant in lap passengers"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "infantInSeat",
+        "description": "Count of infant in seat passengers"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "senior",
+        "description": "Count of senior passengers"
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 38,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_adult",
+    "memberof": "src/PassengerCountClass.js~PassengerCount",
+    "longname": "src/PassengerCountClass.js~PassengerCount#_adult",
+    "access": null,
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 39,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_child",
+    "memberof": "src/PassengerCountClass.js~PassengerCount",
+    "longname": "src/PassengerCountClass.js~PassengerCount#_child",
+    "access": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 40,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_infantInLap",
+    "memberof": "src/PassengerCountClass.js~PassengerCount",
+    "longname": "src/PassengerCountClass.js~PassengerCount#_infantInLap",
+    "access": null,
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 41,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_infantInSeat",
+    "memberof": "src/PassengerCountClass.js~PassengerCount",
+    "longname": "src/PassengerCountClass.js~PassengerCount#_infantInSeat",
+    "access": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 42,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_senior",
+    "memberof": "src/PassengerCountClass.js~PassengerCount",
+    "longname": "src/PassengerCountClass.js~PassengerCount#_senior",
+    "access": null,
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 43,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/PersonDetailsClass.js",
+    "memberof": null,
+    "longname": "src/PersonDetailsClass.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 5,
+    "content": "/**\n * Created by priyanka on 18/4/16.\n */\n\nimport DateOfBirth from './DOBClass.js';\n\n/**\n * Person Details - saves the basic details about the passenger.\n */\nexport default class PersonDetails extends DateOfBirth {\n    /**\n    * @param {string} gender - Gender of the passenger\n    * @param {string} firstName - First name of the passenger\n    * @param {string} lastName - Last name of the passenger\n    * @param {string} middleName - Middle name of the passenger\n    * @param {object} dateOfBirth - Date Of Birth of the passenger\n    * @param {string} phone - Phone number of the passenger\n    * @param {string} email - Email of the passenger\n    * @param {boolean} isDeciderToPay - Is he the decider to pay?\n    * @param {boolean} isPayer - Is he the Payer?\n    * @param {boolean} isPassenger - Is he the passenger himself?\n    * @param {boolean} isBookingPerson - Is he the booking person?\n    */\n    constructor(gender,firstName,lastName, middleName, dateOfBirth,\n                phone, email, isDeciderToPay, isPayer, isPassenger, isBookingPerson) {\n        super();\n        this._gender = gender;\n        this._firstName = firstName;\n        this._lastName = lastName;\n        this._middleName = middleName;\n        this._dateOfBirth = dateOfBirth;\n        this._phone = phone;\n        this._email = email;\n        this._isDeciderToPay = isDeciderToPay;\n        this._isPayer = isPayer;\n        this._isPassenger = isPassenger;\n        this._isBookingPerson = isBookingPerson;\n    }\n}"
+  },
+  {
+    "__docId__": 44,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "PersonDetails",
+    "memberof": "src/PersonDetailsClass.js",
+    "longname": "src/PersonDetailsClass.js~PersonDetails",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/PersonDetailsClass.js",
+    "importStyle": "PersonDetails",
+    "description": "Person Details - saves the basic details about the passenger.",
+    "lineNumber": 10,
+    "interface": false,
+    "extends": [
+      "src/DOBClass.js~DateOfBirth"
+    ]
+  },
+  {
+    "__docId__": 45,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/PersonDetailsClass.js~PersonDetails",
+    "longname": "src/PersonDetailsClass.js~PersonDetails#constructor",
+    "access": null,
+    "description": "",
+    "lineNumber": 24,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "gender",
+        "description": "Gender of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "firstName",
+        "description": "First name of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "lastName",
+        "description": "Last name of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "middleName",
+        "description": "Middle name of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "dateOfBirth",
+        "description": "Date Of Birth of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "phone",
+        "description": "Phone number of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "email",
+        "description": "Email of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "isDeciderToPay",
+        "description": "Is he the decider to pay?"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "isPayer",
+        "description": "Is he the Payer?"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "isPassenger",
+        "description": "Is he the passenger himself?"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "isBookingPerson",
+        "description": "Is he the booking person?"
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 46,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_gender",
+    "memberof": "src/PersonDetailsClass.js~PersonDetails",
+    "longname": "src/PersonDetailsClass.js~PersonDetails#_gender",
+    "access": null,
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 47,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_firstName",
+    "memberof": "src/PersonDetailsClass.js~PersonDetails",
+    "longname": "src/PersonDetailsClass.js~PersonDetails#_firstName",
+    "access": null,
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 48,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_lastName",
+    "memberof": "src/PersonDetailsClass.js~PersonDetails",
+    "longname": "src/PersonDetailsClass.js~PersonDetails#_lastName",
+    "access": null,
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 49,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_middleName",
+    "memberof": "src/PersonDetailsClass.js~PersonDetails",
+    "longname": "src/PersonDetailsClass.js~PersonDetails#_middleName",
+    "access": null,
+    "description": null,
+    "lineNumber": 30,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_dateOfBirth",
+    "memberof": "src/PersonDetailsClass.js~PersonDetails",
+    "longname": "src/PersonDetailsClass.js~PersonDetails#_dateOfBirth",
+    "access": null,
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_phone",
+    "memberof": "src/PersonDetailsClass.js~PersonDetails",
+    "longname": "src/PersonDetailsClass.js~PersonDetails#_phone",
+    "access": null,
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_email",
+    "memberof": "src/PersonDetailsClass.js~PersonDetails",
+    "longname": "src/PersonDetailsClass.js~PersonDetails#_email",
+    "access": null,
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_isDeciderToPay",
+    "memberof": "src/PersonDetailsClass.js~PersonDetails",
+    "longname": "src/PersonDetailsClass.js~PersonDetails#_isDeciderToPay",
+    "access": null,
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_isPayer",
+    "memberof": "src/PersonDetailsClass.js~PersonDetails",
+    "longname": "src/PersonDetailsClass.js~PersonDetails#_isPayer",
+    "access": null,
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_isPassenger",
+    "memberof": "src/PersonDetailsClass.js~PersonDetails",
+    "longname": "src/PersonDetailsClass.js~PersonDetails#_isPassenger",
+    "access": null,
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_isBookingPerson",
+    "memberof": "src/PersonDetailsClass.js~PersonDetails",
+    "longname": "src/PersonDetailsClass.js~PersonDetails#_isBookingPerson",
+    "access": null,
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/PurchaseDataClass.js",
+    "memberof": null,
+    "longname": "src/PurchaseDataClass.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 7,
+    "content": "/**\n * Created by priyanka on 18/4/16.\n */\n/**\n * this is The Purchase Data Class.\n */\nimport TripData from './TripDataClass.js';\n\n/**\n * Purchase Data Class - comprising of the Pricing ID from Pricing API and Trip Data(having trip ID and userInfo) from TripData Class,\n * returning us the Purchase object\n */\nexport default class PurchaseData extends TripData {\n    /**\n     * @param {number} priceRequestId - This is the pricing ID , received from the pricing API\n     * @param {string} clientNonce - ClientNonce can be GOLD, PREMIUM or PLATINUM\n     * @param {string} priceTier - PriceTier\n     * @param {Object} tripData - This is received from the TripData class\n     * @param {string} pciTransactionId - Payment Transaction ID\n     * @param {string} data - Data having payment related details of the purchased transaction\n     **/\n    constructor(priceRequestId, clientNonce, priceTier,tripData, pciTransactionId, data) {\n        super();\n        this._priceRequestId = priceRequestId;\n        this._clientNonce = clientNonce;\n        this._priceTier = priceTier;\n        this._tripData = tripData;\n        this._pciTransactionId = pciTransactionId;\n        this._data = data;\n    }\n}"
+  },
+  {
+    "__docId__": 58,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "PurchaseData",
+    "memberof": "src/PurchaseDataClass.js",
+    "longname": "src/PurchaseDataClass.js~PurchaseData",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/PurchaseDataClass.js",
+    "importStyle": "PurchaseData",
+    "description": "Purchase Data Class - comprising of the Pricing ID from Pricing API and Trip Data(having trip ID and userInfo) from TripData Class,\nreturning us the Purchase object",
+    "lineNumber": 13,
+    "interface": false,
+    "extends": [
+      "src/TripDataClass.js~TripData"
+    ]
+  },
+  {
+    "__docId__": 59,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/PurchaseDataClass.js~PurchaseData",
+    "longname": "src/PurchaseDataClass.js~PurchaseData#constructor",
+    "access": null,
+    "description": "",
+    "lineNumber": 22,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "priceRequestId",
+        "description": "This is the pricing ID , received from the pricing API"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "clientNonce",
+        "description": "ClientNonce can be GOLD, PREMIUM or PLATINUM"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "priceTier",
+        "description": "PriceTier"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "tripData",
+        "description": "This is received from the TripData class"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pciTransactionId",
+        "description": "Payment Transaction ID"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "Data having payment related details of the purchased transaction"
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 60,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_priceRequestId",
+    "memberof": "src/PurchaseDataClass.js~PurchaseData",
+    "longname": "src/PurchaseDataClass.js~PurchaseData#_priceRequestId",
+    "access": null,
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_clientNonce",
+    "memberof": "src/PurchaseDataClass.js~PurchaseData",
+    "longname": "src/PurchaseDataClass.js~PurchaseData#_clientNonce",
+    "access": null,
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_priceTier",
+    "memberof": "src/PurchaseDataClass.js~PurchaseData",
+    "longname": "src/PurchaseDataClass.js~PurchaseData#_priceTier",
+    "access": null,
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_tripData",
+    "memberof": "src/PurchaseDataClass.js~PurchaseData",
+    "longname": "src/PurchaseDataClass.js~PurchaseData#_tripData",
+    "access": null,
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_pciTransactionId",
+    "memberof": "src/PurchaseDataClass.js~PurchaseData",
+    "longname": "src/PurchaseDataClass.js~PurchaseData#_pciTransactionId",
+    "access": null,
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_data",
+    "memberof": "src/PurchaseDataClass.js~PurchaseData",
+    "longname": "src/PurchaseDataClass.js~PurchaseData#_data",
+    "access": null,
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/SegmentClass.js",
+    "memberof": null,
+    "longname": "src/SegmentClass.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 7,
+    "content": "/**\n * Created by priyanka on 18/4/16.\n */\n/**\n * Segment object - Segments are the number of flights changed\n */\nimport Leg from './LegClass.js';\n/**\n * A segment is one or more consecutive legs on the same flight.The segment(s) constituting the slice.\n **/\n\nexport default class Segment extends Leg {\n    /**\n     * @param {number} duration - Flight duration\n     * @param {object} flight - Flight object having flight details\n     * @param {string} cabin - Booked Cabin in the Flight\n     * @param {string} bookingCode - The booking code or class for this segment.\n     * @param {number} bookingCodeCount - The number of seats available in this booking code on this segment.\n     * @param {string} data - [OPTIONAL] any client specific key-value pair specific to segment\n     * @param {object[]} leg - Leg object comprising of the details about the hop taken by a flight.Segment can have multiple legs\n     **/\n    constructor(duration, flight, cabin, bookingCode, bookingCodeCount, data, leg) {\n        super();\n        this._duration = duration;\n        this._flight = flight;\n        this._cabin = cabin;\n        this._bookingCode = bookingCode;\n        this._bookingCodeCount = bookingCodeCount;\n        this._data = data;\n        this._leg = leg;\n    }\n}\n"
+  },
+  {
+    "__docId__": 67,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "Segment",
+    "memberof": "src/SegmentClass.js",
+    "longname": "src/SegmentClass.js~Segment",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/SegmentClass.js",
+    "importStyle": "Segment",
+    "description": "A segment is one or more consecutive legs on the same flight.The segment(s) constituting the slice.",
+    "lineNumber": 12,
+    "interface": false,
+    "extends": [
+      "src/LegClass.js~Leg"
+    ]
+  },
+  {
+    "__docId__": 68,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/SegmentClass.js~Segment",
+    "longname": "src/SegmentClass.js~Segment#constructor",
+    "access": null,
+    "description": "",
+    "lineNumber": 22,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "duration",
+        "description": "Flight duration"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "flight",
+        "description": "Flight object having flight details"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cabin",
+        "description": "Booked Cabin in the Flight"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "bookingCode",
+        "description": "The booking code or class for this segment."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "bookingCodeCount",
+        "description": "The number of seats available in this booking code on this segment."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "[OPTIONAL] any client specific key-value pair specific to segment"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "leg",
+        "description": "Leg object comprising of the details about the hop taken by a flight.Segment can have multiple legs"
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 69,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_duration",
+    "memberof": "src/SegmentClass.js~Segment",
+    "longname": "src/SegmentClass.js~Segment#_duration",
+    "access": null,
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_flight",
+    "memberof": "src/SegmentClass.js~Segment",
+    "longname": "src/SegmentClass.js~Segment#_flight",
+    "access": null,
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_cabin",
+    "memberof": "src/SegmentClass.js~Segment",
+    "longname": "src/SegmentClass.js~Segment#_cabin",
+    "access": null,
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_bookingCode",
+    "memberof": "src/SegmentClass.js~Segment",
+    "longname": "src/SegmentClass.js~Segment#_bookingCode",
+    "access": null,
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_bookingCodeCount",
+    "memberof": "src/SegmentClass.js~Segment",
+    "longname": "src/SegmentClass.js~Segment#_bookingCodeCount",
+    "access": null,
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_data",
+    "memberof": "src/SegmentClass.js~Segment",
+    "longname": "src/SegmentClass.js~Segment#_data",
+    "access": null,
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_leg",
+    "memberof": "src/SegmentClass.js~Segment",
+    "longname": "src/SegmentClass.js~Segment#_leg",
+    "access": null,
+    "description": null,
+    "lineNumber": 30,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/SliceClass.js",
+    "memberof": null,
+    "longname": "src/SliceClass.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 7,
+    "content": "/**\n * Created by priyanka on 18/4/16.\n */\n/**\n * Slice object\n */\nimport Segment from './SegmentClass.js';\n/**\n * A slice represents a traveller's intent, the portion of a low-fare search corresponding to a traveler's request to get between two points. One-way journeys are generally expressed using 1 slice, round-trips using 2.\n * The slices make up a trip's itinerary.\n **/\nexport default class Slice extends Segment {\n    /**\n     * @param {number} duration - Flight duration (to reach from source to the destination)\n     * @param {object[]} segment - Segment object having flight data. Slice can have multiple segments\n     **/\n    constructor(duration, segment) {\n        super();\n        this._duration = duration;\n        this._segment = segment;\n    }\n}\n"
+  },
+  {
+    "__docId__": 77,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "Slice",
+    "memberof": "src/SliceClass.js",
+    "longname": "src/SliceClass.js~Slice",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/SliceClass.js",
+    "importStyle": "Slice",
+    "description": "A slice represents a traveller's intent, the portion of a low-fare search corresponding to a traveler's request to get between two points. One-way journeys are generally expressed using 1 slice, round-trips using 2.\nThe slices make up a trip's itinerary.",
+    "lineNumber": 12,
+    "interface": false,
+    "extends": [
+      "src/SegmentClass.js~Segment"
+    ]
+  },
+  {
+    "__docId__": 78,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/SliceClass.js~Slice",
+    "longname": "src/SliceClass.js~Slice#constructor",
+    "access": null,
+    "description": "",
+    "lineNumber": 17,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "duration",
+        "description": "Flight duration (to reach from source to the destination)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "segment",
+        "description": "Segment object having flight data. Slice can have multiple segments"
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 79,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_duration",
+    "memberof": "src/SliceClass.js~Slice",
+    "longname": "src/SliceClass.js~Slice#_duration",
+    "access": null,
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_segment",
+    "memberof": "src/SliceClass.js~Slice",
+    "longname": "src/SliceClass.js~Slice#_segment",
+    "access": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/TripClass.js",
+    "memberof": null,
+    "longname": "src/TripClass.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 7,
+    "content": "/**\n * Created by priyanka on 18/4/16.\n */\n/**\n * Trip object\n */\nimport Slice from './SliceClass.js';\n/**\n * Trip Class - comprises of the Flight duration and Array of Slice object\n **/\nexport default class Trip extends Slice {\n    /**\n     * @param {boolean} missedConnections - -\n     * @param {object} passengerCounts - Passenger count object having the total count of travelling passengers.\n     * @param {string} data - [OPTIONAL] any client specific key-value pair specific to trip.\n     * @param {object[]} slices - Slice object having trip info. Trip can have multiple slices.\n     **/\n    constructor(missedConnections, passengerCounts, data, slices) {\n        super();\n        this._missedConnections = missedConnections;\n        this._passengerCounts = passengerCounts;\n        this._data = data;\n        this._slices = slices;\n    }\n}\n"
+  },
+  {
+    "__docId__": 82,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "Trip",
+    "memberof": "src/TripClass.js",
+    "longname": "src/TripClass.js~Trip",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/TripClass.js",
+    "importStyle": "Trip",
+    "description": "Trip Class - comprises of the Flight duration and Array of Slice object",
+    "lineNumber": 11,
+    "interface": false,
+    "extends": [
+      "src/SliceClass.js~Slice"
+    ]
+  },
+  {
+    "__docId__": 83,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/TripClass.js~Trip",
+    "longname": "src/TripClass.js~Trip#constructor",
+    "access": null,
+    "description": "",
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "missedConnections",
+        "description": "-"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "passengerCounts",
+        "description": "Passenger count object having the total count of travelling passengers."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "[OPTIONAL] any client specific key-value pair specific to trip."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "slices",
+        "description": "Slice object having trip info. Trip can have multiple slices."
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 84,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_missedConnections",
+    "memberof": "src/TripClass.js~Trip",
+    "longname": "src/TripClass.js~Trip#_missedConnections",
+    "access": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 85,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_passengerCounts",
+    "memberof": "src/TripClass.js~Trip",
+    "longname": "src/TripClass.js~Trip#_passengerCounts",
+    "access": null,
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_data",
+    "memberof": "src/TripClass.js~Trip",
+    "longname": "src/TripClass.js~Trip#_data",
+    "access": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_slices",
+    "memberof": "src/TripClass.js~Trip",
+    "longname": "src/TripClass.js~Trip#_slices",
+    "access": null,
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/TripDataClass.js",
+    "memberof": null,
+    "longname": "src/TripDataClass.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 7,
+    "content": "/**\n * Created by priyanka on 18/4/16.\n */\n/**\n * this is The Trip Data Class.\n */\nimport PersonDetails from './PersonDetailsClass.js';\n\n/**\n * Trip Data Class - comprising of the Trip ID from Pricing API and Person Details from PersonDetails Class,\n * returns us the Trip data for Purchase object\n */\nexport default class TripData extends PersonDetails {\n    /**\n     * @param {string} id - Trip ID received from the Pricing API\n     * @param {Object} personInfo - Person details received from PersonDetails Class\n     */\n    constructor(id, personInfo) {\n        this._id = id;\n        super();\n    }\n}"
+  },
+  {
+    "__docId__": 89,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "TripData",
+    "memberof": "src/TripDataClass.js",
+    "longname": "src/TripDataClass.js~TripData",
+    "access": null,
+    "export": true,
+    "importPath": "swagger-ui/src/TripDataClass.js",
+    "importStyle": "TripData",
+    "description": "Trip Data Class - comprising of the Trip ID from Pricing API and Person Details from PersonDetails Class,\nreturns us the Trip data for Purchase object",
+    "lineNumber": 13,
+    "interface": false,
+    "extends": [
+      "src/PersonDetailsClass.js~PersonDetails"
+    ]
+  },
+  {
+    "__docId__": 90,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/TripDataClass.js~TripData",
+    "longname": "src/TripDataClass.js~TripData#constructor",
+    "access": null,
+    "description": "",
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "Trip ID received from the Pricing API"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "personInfo",
+        "description": "Person details received from PersonDetails Class"
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 91,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_id",
+    "memberof": "src/TripDataClass.js~TripData",
+    "longname": "src/TripDataClass.js~TripData#_id",
+    "access": null,
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 92,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/apiCall.js",
+    "memberof": null,
+    "longname": "src/apiCall.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 26,
+    "content": "/**\n * Created by priyanka on 22/4/16.\n */\n/**\n * fBird is another global object including various calls like GET and POST calls.\n * @typedef {Object} fBird\n */\n\n/**\n * fBird.get takes the auth Token and does the authentication for the user.\n * @typedef  { } fBird.get Execute a GET request.\n * @property {string} path To the requested resource\n * @property {object} [params] Object of additional parameters\n */\n\n/**\n * fBird.post returns with a request call on the pricing endpoint.\n * @typedef  { } fBird.post Execute a PUT request.\n * @property {string} path To the requested resource\n * @property {object} [params] Object of additional parameters\n */\n\n/**\n * XMLHttpRequest is a global object with a Fake XMLHttpRequest function ( useFakeXMLHttpRequest() ) to run the SDK test cases.\n * @typedef {Object} XMLHttpRequest\n */"
+  },
+  {
+    "__docId__": 93,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "fBird",
+    "memberof": "src/apiCall.js",
+    "longname": "src/apiCall.js~fBird",
+    "access": null,
+    "description": "fBird is another global object including various calls like GET and POST calls.",
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "fBird"
+    }
+  },
+  {
+    "__docId__": 94,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "fBird.get",
+    "memberof": "src/apiCall.js",
+    "longname": "src/apiCall.js~fBird.get",
+    "access": null,
+    "description": "fBird.get takes the auth Token and does the authentication for the user.",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "To the requested resource"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "params",
+        "description": "Object of additional parameters"
+      }
+    ],
+    "type": {
+      "types": [
+        " "
+      ],
+      "optional": false,
+      "name": "fBird.get"
+    }
+  },
+  {
+    "__docId__": 95,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "fBird.post",
+    "memberof": "src/apiCall.js",
+    "longname": "src/apiCall.js~fBird.post",
+    "access": null,
+    "description": "fBird.post returns with a request call on the pricing endpoint.",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "To the requested resource"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "params",
+        "description": "Object of additional parameters"
+      }
+    ],
+    "type": {
+      "types": [
+        " "
+      ],
+      "optional": false,
+      "name": "fBird.post"
+    }
+  },
+  {
+    "__docId__": 96,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "XMLHttpRequest",
+    "memberof": "src/apiCall.js",
+    "longname": "src/apiCall.js~XMLHttpRequest",
+    "access": null,
+    "description": "XMLHttpRequest is a global object with a Fake XMLHttpRequest function ( useFakeXMLHttpRequest() ) to run the SDK test cases.",
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "XMLHttpRequest"
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/objectsCall.js",
+    "memberof": null,
+    "longname": "src/objectsCall.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 4,
+    "content": "/**\n * Created by priyanka on 21/4/16.\n */\nimport DateOfBirth from './DOBClass.js';\nimport Date from './DateClass.js';\nimport Flight from './FlightClass.js';\nimport Leg from './LegClass.js';\nimport PassengerCount from './PassengerCountClass.js';\nimport PersonDetails from './PersonDetailsClass.js';\nimport PurchaseData from './PurchaseDataClass.js';\nimport Segment from './SegmentClass.js';\nimport Slice from './SliceClass.js';\nimport Trip from './TripClass.js';\nimport TripData from './TripDataClass.js';\n\n/**\n * dataObjects is a global object, which returns a new instance of each class.\n * @typedef {Object} dataObjects\n */\n\n/**\n * dataObjects.flight returns a new instance of Flight class.\n * @typedef {Object} dataObjects.flight\n * @property {number} airlineCode - Airline code of the flight\n * @property {number} flightNumber - Flight number of the flight\n * @property {string} date - Departure date (format : YYYY-MM-DD)\n */\n\nexport function flight(airlineCode, flightNumber, date){\n  return (new Flight(airlineCode, flightNumber, date))\n}\n\n/**\n * dataObjects.passengerCounts returns a new instance of PassengerCount class.\n * @typedef {Object} dataObjects.passengerCounts\n * @property {number} adult - Count of adult passengers\n * @property {number} child - Count of child passengers\n * @property {number} infantInLap - Count of infant in lap passengers\n * @property {number} infantInSeat - Count of infant in seat passengers\n * @property {number} senior - Count of senior passengers\n */\n\nexport function passengerCounts(adult, child, infantInLap, infantInSeat, senior){\n  return (new PassengerCount(adult, child, infantInLap, infantInSeat, senior))\n}\n\n/**@typedef {Object} dataObjects.data\n */\n\nexport function data(){\n  return data\n}\n\n/**\n * dataObjects.date returns a new instance of Date class.\n * @typedef {Object} dataObjects.date\n * @property {string} year - Year of booking\n * @property {string} month - Month of booking\n * @property {string} day - Date of booking\n */\n\nexport function date(year, month, day){\n  return (new Date(year, month, day));\n}\n\n/**\n * dataObjects.leg returns a new instance of Leg class.\n * @typedef {Object} dataObjects.leg\n * @property {string} aircraft - Aircraft is flying between an origin and destination.\n * @property {string} arrival - Flight arrival date in Jodatime format\n * @property {string} departure - Flight departure date in Jodatime format\n * @property {string} origin - Source origin of the flight\n * @property {string} destination - Flight Destination\n * @property {string} operatingDisclosure - Department of Transportation disclosure information on the actual operator of a flight in a code share.\n * @property {boolean} changePlane - Whether the passenger(s) have to change planes following this leg. Only applies to the next leg.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to leg\n */\n\nexport function leg(aircraft, arrival, departure, origin, destination, operatingDisclosure, changePlane, data){\n  return (new Leg(aircraft, arrival, departure, origin, destination, operatingDisclosure, changePlane, data));\n}\n\n/**\n * dataObjects.segment returns a new instance of Segment class.\n * @typedef {Object} dataObjects.segment\n * @property {number} duration - Flight duration\n * @property {object} flight - Flight object having flight details\n * @property {string} cabin - Booked Cabin in the Flight\n * @property {string} bookingCode - The booking code or class for this segment.\n * @property {number} bookingCodeCount - The number of seats available in this booking code on this segment.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to segment\n * @property {object[]} leg - Leg object comprising of the details about the hop taken by a flight.Segment can have multiple legs\n */\n\nexport function segment(duration, flight, cabin, bookingCode, bookingCodeCount, data, leg){\n  return (new Segment(duration, flight, cabin, bookingCode, bookingCodeCount, data, leg));\n}\n\n/**\n * dataObjects.slice returns a new instance of Slice class.\n * @typedef {Object} dataObjects.slice\n * @property {number} duration - Flight duration (to reach from source to the destination)\n * @property {object[]} segment - Segment object having flight data. Slice can have multiple segments\n */\n\nexport function slice(duration, segment){\n  return (new Slice(duration, segment));\n}\n\n/**\n * dataObjects.trip returns a new instance of Trip class.\n * @typedef {Object} dataObjects.trip\n * @property {boolean} missedConnections - -\n * @property {object} passengerCounts - Passenger count object having the total count of travelling passengers.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to trip.\n * @property {object[]} slices - Slice object having trip info. Trip can have multiple slices.\n */\nexport function trip(missedConnections, passengerCounts, data, slices){\n  return (new Trip(missedConnections, passengerCounts, data, slices));\n}\n\n/**\n * dataObjects.dateOfBirth returns a new instance of DateOfBirth class.\n * @typedef {Object} dataObjects.dateOfBirth\n * @property {string} year - Birth year of the passenger\n * @property {string} month - Birth month of the passenger\n * @property {string} day - Birth date of the passenger\n */\nexport function dateOfBirth(year, month, day){\n  return (new DateOfBirth(year, month, day));\n}\n\n/**\n * dataObjects.personInfo returns a new instance of PersonInfo class.\n * @typedef {Object} dataObjects.personInfo\n * @property {string} gender - Gender of the passenger\n * @property {string} firstName - First name of the passenger\n * @property {string} lastName - Last name of the passenger\n * @property {string} middleName - Middle name of the passenger\n * @property {object} dateOfBirth - Date Of Birth of the passenger\n * @property {string} phone - Phone number of the passenger\n * @property {string} email - Email of the passenger\n * @property {boolean} isDeciderToPay - Is he the decider to pay?\n * @property {boolean} isPayer - Is he the Payer?\n * @property {boolean} isPassenger - Is he the passenger himself?\n * @property {boolean} isBookingPerson - Is he the booking person?\n */\nexport function personInfo(gender, firstName, lastName, middleName, dateOfBirth,\n                           phone, email, isDeciderToPay, isPayer, isPassenger, isBookingPerson){\n  return (new PersonDetails(gender, firstName, lastName, middleName, dateOfBirth,\n      phone, email, isDeciderToPay, isPayer, isPassenger, isBookingPerson));\n}\n\n/**\n * dataObjects.tripData returns a new instance of TripData class.\n * @typedef {Object} dataObjects.tripData\n * @property {string} id - Trip ID received from the Pricing API\n * @property {object} personInfo - Person details received from PersonDetails class\n\n */\nexport function tripData(id, personInfo){\n  return (new TripData(id, personInfo));\n}\n\n\n/**\n * dataObjects.purchaseData returns a new instance of PurchaseData class.\n * @typedef {Object} dataObjects.purchaseData\n * @property {number} priceRequestId - This is the pricing ID , received from the pricing API\n * @property {string} clientNonce - ClientNonce can be GOLD, PREMIUM or PLATINUM\n * @property {string} priceTier - PriceTier\n * @property {object} tripData - This is received from the TripData Class\n * @property {string} pciTransactionId - Payment Transaction ID\n * @property {string} data - Data having payment related details of the purchased transaction\n */\nexport function purchaseData(priceRequestId, clientNonce, priceTier,tripData, pciTransactionId, data){\n  return (new PurchaseData(priceRequestId, clientNonce, priceTier,tripData, pciTransactionId, data));\n}\n\n\n\n\n\n\n"
+  },
+  {
+    "__docId__": 98,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "dataObjects",
+    "memberof": "src/objectsCall.js",
+    "longname": "src/objectsCall.js~dataObjects",
+    "access": null,
+    "description": "dataObjects is a global object, which returns a new instance of each class.",
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "dataObjects"
+    }
+  },
+  {
+    "__docId__": 99,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "dataObjects.flight",
+    "memberof": "src/objectsCall.js",
+    "longname": "src/objectsCall.js~dataObjects.flight",
+    "access": null,
+    "description": "dataObjects.flight returns a new instance of Flight class.",
+    "lineNumber": 29,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "airlineCode",
+        "description": "Airline code of the flight"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "flightNumber",
+        "description": "Flight number of the flight"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "date",
+        "description": "Departure date (format : YYYY-MM-DD)"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "dataObjects.flight"
+    }
+  },
+  {
+    "__docId__": 100,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "dataObjects.passengerCounts",
+    "memberof": "src/objectsCall.js",
+    "longname": "src/objectsCall.js~dataObjects.passengerCounts",
+    "access": null,
+    "description": "dataObjects.passengerCounts returns a new instance of PassengerCount class.",
+    "lineNumber": 43,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "adult",
+        "description": "Count of adult passengers"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "child",
+        "description": "Count of child passengers"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "infantInLap",
+        "description": "Count of infant in lap passengers"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "infantInSeat",
+        "description": "Count of infant in seat passengers"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "senior",
+        "description": "Count of senior passengers"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "dataObjects.passengerCounts"
+    }
+  },
+  {
+    "__docId__": 101,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "dataObjects.data",
+    "memberof": "src/objectsCall.js",
+    "longname": "src/objectsCall.js~dataObjects.data",
+    "access": null,
+    "description": null,
+    "lineNumber": 50,
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "dataObjects.data"
+    }
+  },
+  {
+    "__docId__": 102,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "dataObjects.date",
+    "memberof": "src/objectsCall.js",
+    "longname": "src/objectsCall.js~dataObjects.date",
+    "access": null,
+    "description": "dataObjects.date returns a new instance of Date class.",
+    "lineNumber": 62,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "year",
+        "description": "Year of booking"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "month",
+        "description": "Month of booking"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "day",
+        "description": "Date of booking"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "dataObjects.date"
+    }
+  },
+  {
+    "__docId__": 103,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "dataObjects.leg",
+    "memberof": "src/objectsCall.js",
+    "longname": "src/objectsCall.js~dataObjects.leg",
+    "access": null,
+    "description": "dataObjects.leg returns a new instance of Leg class.",
+    "lineNumber": 79,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "aircraft",
+        "description": "Aircraft is flying between an origin and destination."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arrival",
+        "description": "Flight arrival date in Jodatime format"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "departure",
+        "description": "Flight departure date in Jodatime format"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "origin",
+        "description": "Source origin of the flight"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "destination",
+        "description": "Flight Destination"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "operatingDisclosure",
+        "description": "Department of Transportation disclosure information on the actual operator of a flight in a code share."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "changePlane",
+        "description": "Whether the passenger(s) have to change planes following this leg. Only applies to the next leg."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "[OPTIONAL] any client specific key-value pair specific to leg"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "dataObjects.leg"
+    }
+  },
+  {
+    "__docId__": 104,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "dataObjects.segment",
+    "memberof": "src/objectsCall.js",
+    "longname": "src/objectsCall.js~dataObjects.segment",
+    "access": null,
+    "description": "dataObjects.segment returns a new instance of Segment class.",
+    "lineNumber": 95,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "duration",
+        "description": "Flight duration"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "flight",
+        "description": "Flight object having flight details"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cabin",
+        "description": "Booked Cabin in the Flight"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "bookingCode",
+        "description": "The booking code or class for this segment."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "bookingCodeCount",
+        "description": "The number of seats available in this booking code on this segment."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "[OPTIONAL] any client specific key-value pair specific to segment"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "leg",
+        "description": "Leg object comprising of the details about the hop taken by a flight.Segment can have multiple legs"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "dataObjects.segment"
+    }
+  },
+  {
+    "__docId__": 105,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "dataObjects.slice",
+    "memberof": "src/objectsCall.js",
+    "longname": "src/objectsCall.js~dataObjects.slice",
+    "access": null,
+    "description": "dataObjects.slice returns a new instance of Slice class.",
+    "lineNumber": 106,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "duration",
+        "description": "Flight duration (to reach from source to the destination)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "segment",
+        "description": "Segment object having flight data. Slice can have multiple segments"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "dataObjects.slice"
+    }
+  },
+  {
+    "__docId__": 106,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "dataObjects.trip",
+    "memberof": "src/objectsCall.js",
+    "longname": "src/objectsCall.js~dataObjects.trip",
+    "access": null,
+    "description": "dataObjects.trip returns a new instance of Trip class.",
+    "lineNumber": 118,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "missedConnections",
+        "description": "-"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "passengerCounts",
+        "description": "Passenger count object having the total count of travelling passengers."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "[OPTIONAL] any client specific key-value pair specific to trip."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "slices",
+        "description": "Slice object having trip info. Trip can have multiple slices."
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "dataObjects.trip"
+    }
+  },
+  {
+    "__docId__": 107,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "dataObjects.dateOfBirth",
+    "memberof": "src/objectsCall.js",
+    "longname": "src/objectsCall.js~dataObjects.dateOfBirth",
+    "access": null,
+    "description": "dataObjects.dateOfBirth returns a new instance of DateOfBirth class.",
+    "lineNumber": 129,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "year",
+        "description": "Birth year of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "month",
+        "description": "Birth month of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "day",
+        "description": "Birth date of the passenger"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "dataObjects.dateOfBirth"
+    }
+  },
+  {
+    "__docId__": 108,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "dataObjects.personInfo",
+    "memberof": "src/objectsCall.js",
+    "longname": "src/objectsCall.js~dataObjects.personInfo",
+    "access": null,
+    "description": "dataObjects.personInfo returns a new instance of PersonInfo class.",
+    "lineNumber": 148,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "gender",
+        "description": "Gender of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "firstName",
+        "description": "First name of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "lastName",
+        "description": "Last name of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "middleName",
+        "description": "Middle name of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "dateOfBirth",
+        "description": "Date Of Birth of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "phone",
+        "description": "Phone number of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "email",
+        "description": "Email of the passenger"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "isDeciderToPay",
+        "description": "Is he the decider to pay?"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "isPayer",
+        "description": "Is he the Payer?"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "isPassenger",
+        "description": "Is he the passenger himself?"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "isBookingPerson",
+        "description": "Is he the booking person?"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "dataObjects.personInfo"
+    }
+  },
+  {
+    "__docId__": 109,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "dataObjects.tripData",
+    "memberof": "src/objectsCall.js",
+    "longname": "src/objectsCall.js~dataObjects.tripData",
+    "access": null,
+    "description": "dataObjects.tripData returns a new instance of TripData class.",
+    "lineNumber": 161,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "Trip ID received from the Pricing API"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "personInfo",
+        "description": "Person details received from PersonDetails class"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "dataObjects.tripData"
+    }
+  },
+  {
+    "__docId__": 110,
+    "kind": "typedef",
+    "static": true,
+    "variation": null,
+    "name": "dataObjects.purchaseData",
+    "memberof": "src/objectsCall.js",
+    "longname": "src/objectsCall.js~dataObjects.purchaseData",
+    "access": null,
+    "description": "dataObjects.purchaseData returns a new instance of PurchaseData class.",
+    "lineNumber": 176,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "priceRequestId",
+        "description": "This is the pricing ID , received from the pricing API"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "clientNonce",
+        "description": "ClientNonce can be GOLD, PREMIUM or PLATINUM"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "priceTier",
+        "description": "PriceTier"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "tripData",
+        "description": "This is received from the TripData Class"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pciTransactionId",
+        "description": "Payment Transaction ID"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "Data having payment related details of the purchased transaction"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "dataObjects.purchaseData"
+    }
+  },
+  {
+    "__docId__": 112,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Infinity",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 113,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~NaN",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 114,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~undefined",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 115,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~null",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Object",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 117,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~object",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 118,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Function",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 119,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~function",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 120,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Boolean",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 121,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~boolean",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 122,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Symbol",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Error",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 124,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~EvalError",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 125,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~InternalError",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 126,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~RangeError",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 127,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~ReferenceError",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 128,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~SyntaxError",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 129,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~TypeError",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 130,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~URIError",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 131,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Number",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 132,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~number",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 133,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Date",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 134,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~String",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 135,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~string",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 136,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~RegExp",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 137,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Int8Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 139,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint8Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 140,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint8ClampedArray",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 141,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Int16Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 142,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint16Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 143,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Int32Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 144,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint32Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 145,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Float32Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 146,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Float64Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 147,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Map",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 148,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Set",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 149,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~WeakMap",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 150,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~WeakSet",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 151,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~ArrayBuffer",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 152,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~DataView",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 153,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~JSON",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 154,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Promise",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 155,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Generator",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 156,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~GeneratorFunction",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 157,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Reflect",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 158,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Proxy",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 160,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "CanvasRenderingContext2D",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~CanvasRenderingContext2D",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 161,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "DocumentFragment",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~DocumentFragment",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 162,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Element",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Element",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~Element",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 163,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Event",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Event",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~Event",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 164,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Node",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Node",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~Node",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 165,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "NodeList",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/NodeList",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~NodeList",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 166,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "XMLHttpRequest",
+    "externalLink": "https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~XMLHttpRequest",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 167,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "AudioContext",
+    "externalLink": "https://developer.mozilla.org/en/docs/Web/API/AudioContext",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~AudioContext",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 168,
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "test/ApiTest.js",
+    "memberof": null,
+    "longname": "test/ApiTest.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 5,
+    "content": "/**\n * Created by priyanka on 28/4/16.\n */\n\nconst chai = require('chai');\nconst expect = require('chai').expect;\nconst assert = require('chai').assert;\nconst sinon = require('sinon');\nconst fBird = require('../index');\nconst btoa = require('btoa');\nconst chaiHttp = require('chai-http');\nconst rewire = require(\"rewire\");\nconst api = require('../src/api');\nchai.use(chaiHttp);\nchai.should();\n\n\n/** @test {API} */\ndescribe('API calls', function() {\n\n    var xhr;\n    beforeEach(function() {\n        global.XMLHttpRequest = sinon.useFakeXMLHttpRequest();\n        this.xhr = sinon.useFakeXMLHttpRequest();\n        var requ = this.requests = [];\n        this.xhr.onCreate = function(xhr) {\n            requ.push(xhr);\n        };\n        fBird.initialize({\n            client_id: 'YOUR_CLIENT_ID',\n            redirect_uri: 'http://localhost:8181'\n        });\n    });\n\n    afterEach(function() {\n        this.xhr.restore();\n    });\n\n    describe(\"Authentication\", () => {\n        /** @test {fBird.get /v1/authenticate} */\n\n        it(\"should call get and return token\", function(done) {\n\n            var result;\n            var token = {\n                \"code\": \"200\",\n                \"message\": \"dXNlck5hbWU6WE5SMGc1cDN3NVYwVmxpL1UvaXJzQlp6R3VJPToxNDYwMjA5OTM2NzI5\"\n            };\n\n            var path = 'http://localhost:8181/v1/authenticate',\n                loginData = 'userName:password';\n            var mock = sinon.mock(api).expects(\"request\")\n                .withExactArgs('GET', path, loginData).returns(token);\n            var expectedResult = {\n                \"code\": \"200\",\n                \"message\": \"dXNlck5hbWU6WE5SMGc1cDN3NVYwVmxpL1UvaXJzQlp6R3VJPToxNDYwMjA5OTM2NzI5\"\n            };\n            result = fBird.get(path, loginData);\n            mock.verify();\n            done();\n            expect(result).to.be.a(\"object\");\n            expect(result).to.be.not.a(\"number\");\n            expect(result).to.be.not.a(\"string\");\n            expect(result.code).to.equal(expectedResult.code);\n            expect(result.message).to.equal(expectedResult.message);\n        });\n\n        it('should return the request with the promise', function() {\n            var path = 'v1/authenticate',\n                data = 'userName:password';\n            var promise = fBird.get('GET', path, data, '', 'noChange');\n            assert.isNotNull(promise.request);\n            assert.instanceOf(promise.request, XMLHttpRequest);\n        });\n\n        it('should return the correct status if a request has an empty response', function() {\n            var callback = sinon.spy();\n            var data = 'userName:passWord',\n                token = 'dXNlck5hbWU6cGFzc3dvcmQ=';\n\n            fBird.get('v1/authenticate', data);\n            var expectedResult = JSON.stringify({\n                \"code\": \"400\",\n                \"message\": \"No authorization credentials found\"\n            });\n            this.requests[0].respond(400, {\n                    \"Authorization\": \"Basic \" + token\n                },\n                expectedResult);\n            var result = this.requests[0].response;\n            expect(this.requests.length).to.equal(1);\n            callback.calledWith(expectedResult);\n            expect(result.code).to.equal(expectedResult.code);\n            expect(result.message).to.equal(expectedResult.message);\n        });\n\n        it('should make a GET against trip object', function(done) {\n            fBird.get('v1/authenticate', 'userName:password').then(function(res) {\n                assert.equal(res.code, 200);\n                assert.equal(this.requests[0].method, 'GET');\n                done();\n            }.bind(this)).catch(function(err) {\n                done(err);\n            });\n            this.requests[0].respond(200, {\n                    'Authorization': 'Basic userName:password'\n                },\n                '{\"code\":\"200\",\"message\":\"dXNlck5hbWU6WE5SMGc1cDN3NVYwVmxpL1UvaXJzQlp6R3VJPToxNDYwMjA5OTM2NzI5\"}');\n        });\n\n        it('should trigger a promise catch on a 403 with bad JSON', function(done) {\n            fBird.get('v1/authenticate', '').then(function(res) {\n                assert(res, 200);\n                assert.fail('dXNlck5hbWU6WE5SMGc1cDN3NVYwVmxpL1UvaXJzQlp6R3VJPToxNDYwMjA5OTM2NzI5', res.message);\n                //done(res);\n            }.bind(this)).catch(function(err) {\n                assert.ok(err.actual, 'Promise should not resolve');\n                done(err);\n                //assert.equal(err.status, 500, 'error.status is a 500');\n            });\n            this.requests[0].respond(403, {\n                    'Authorization': 'Basic userName:password'\n                },\n                '{\"code\":\"200\",\"message\":\"dXNlck5hbWU6WE5SMGc1cDN3NVYwVmxpL1UvaXJzQlp6R3VJPToxNDYwMjA5OTM2NzI5\"}');\n            done()\n        });\n\n        it('should trigger a promise catch on a 500 with error JSON', function(done) {\n            fBird.get('v1/authenticate').then(function(res) {\n                assert.fail('Promise should not resolve');\n            }.bind(this)).catch(function(err) {\n                assert.ok(err, 'Promise.catch is sent and error object');\n                assert.equal(err.status, 500, 'error.status is a 500');\n                assert.equal(err.message, 'server explosion');\n            });\n            this.requests[0].respond(500, {\n                    'Content-Type': 'text/json'\n                },\n                '{\"errors\": [{\"error_message\": \"server explosion\"}]}');\n            done();\n        });\n\n        it('should trigger a promise catch on a 404', function(done) {\n            fBird.get('v1/authenticate').then(function(res) {\n                assert.fail('Promise should not resolve');\n            }.bind(this)).catch(function(err) {\n                assert.ok(err, 'Promise.catch is sent and error object');\n                assert.equal(err.status, 404, 'error.status is a 404');\n                assert.equal(err.message, 'not found');\n            });\n            this.requests[0].respond(404, {\n                    'Content-Type': 'text/json'\n                },\n                '{\"errors\": [{\"error_message\": \"not found\"}]}');\n            done();\n        });\n\n        it('get basic authenticated token', function() {\n            var path = 'v1/authenticate',\n                data = 'userName:password';\n            var callback = sinon.spy();\n            var promise = api.request('GET', path, data, '', 'noChange');\n            expect(this.requests.length).to.equal(1);\n            assert.isNotNull(this.requests);\n            this.requests[0].respond(200, {\n                \"Authorization\": \"Basic \"\n            }, data);\n            assert.equal(promise.request.status, 200);\n        });\n\n        it('should return the correct status if a request has an empty response', function(done) {\n            var path = 'v1/authenticate',\n                data = 'userName:password';\n            var promise = api.request('GET', path, data, '', 'noChange');\n            this.requests[0].respond(200, {\n                    \"Authorization\": \"Basic \"\n                },\n                data);\n            assert.equal(promise.request.status, 200);\n            // assert.equal(promise.request.message, 'HTTP Error: 500');\n            done();\n        });\n    });\n\n    describe(\"pricing\", () => {\n\n        var data = {\n                \"missedConnections\": true,\n                \"passengerCounts\": {\n                    \"adult\": 1,\n                    \"child\": 2,\n                    \"infantInLap\": 0,\n                    \"infantInSeat\": 0,\n                    \"senior\": 0\n                },\n                \"data\": {\n                    \"key1\": \"val1\",\n                    \"kye2\": \"val2\"\n                },\n                \"slices\": [{\n                    \"duration\": 0,\n                    \"segments\": [{\n                        \"duration\": 10,\n                        \"flight\": {\n                            \"airlineCode\": \"AA\",\n                            \"flightNumber\": 124,\n                            \"date\": {\n                                \"year\": 2016,\n                                \"month\": 4,\n                                \"day\": 4\n                            }\n                        },\n                        \"cabin\": \"cabin\",\n                        \"bookingCode\": \"bookingCode\",\n                        \"bookingCodeCount\": \"bookingCodeCount\",\n                        \"data\": {\n                            \"key1\": \"val1\",\n                            \"kye2\": \"val2\"\n                        },\n                        \"leg\": [{\n                            \"aircraft\": \"aircraft\",\n                            \"arrival\": \"2016-04-04\",\n                            \"departure\": \"2016-04-04\",\n                            \"origin\": \"ORD\",\n                            \"destination\": \"LAX\",\n                            \"operatingDisclosure\": \"operatingDisclosure\",\n                            \"changePlane\": \"changePlane\",\n                            \"data\": {\n                                \"key1\": \"val1\",\n                                \"kye2\": \"val2\"\n                            }\n                        }]\n                    }]\n                }]\n            },\n\n            token = 'dXNlck5hbWU6cGFzc3dvcmQ=';\n        var expectedResult = JSON.stringify({\n            \"code\": \"200\",\n            \"data\": {\n                \"id\": \"41008\",\n                \"priceExpiration\": \"2016-05-04T17:29Z\",\n                \"tripId\": \"41016\",\n                \"data\": {\n                    \"key1\": \"val1\",\n                    \"kye2\": \"val2\"\n                },\n                \"regularPrice\": 19.0\n            }\n        });\n\n        /** @test {fBird.post /v1/pricing} */\n\n        it('should call pricing API post method', function(done) {\n\n            var data = dataObjects.data({\n                \"key1\": \"val1\",\n                \"kye2\": \"val2\"\n            });\n            var result;\n            var pricingToken = 'YWNjZXNzVG9rZW46ZFhObGNrNWhiV1U2V0U1U01HYzFjRE4zTlZZd1ZteHBMMVV2YVhKelFscDZSM1ZKUFRveE5EWXdNakE1T1RNMk56STU=';\n            var path = 'http://localhost:8181/v1/pricing';\n\n            var pricingResult = {\n                \"code\": \"200\",\n                \"data\": {\n                    \"id\": \"49256\",\n                    \"priceExpiration\": \"2016-04-22T17:21Z\",\n                    \"tripId\": \"28904\",\n                    \"data\": {\n                        \"key1\": \"val1\",\n                        \"kye2\": \"val2\"\n                    },\n                    \"regularPrice\": 19.0\n                }\n            };\n            var expectedResult = {\n                \"code\": \"200\",\n                \"data\": {\n                    \"id\": \"49256\",\n                    \"priceExpiration\": \"2016-04-22T17:21Z\",\n                    \"tripId\": \"28904\",\n                    \"data\": {\n                        \"key1\": \"val1\",\n                        \"kye2\": \"val2\"\n                    },\n                    \"regularPrice\": 19.0\n                }\n            };\n            /* =------------generating trip objects =----------------*/\n\n            var date = dataObjects.date(2016, 4, 4);\n            var flight = dataObjects.flight('AA', 124, date);\n            var passengerCounts = dataObjects.passengerCounts(1, 2, 0, 0, 0);\n\n            var leg = dataObjects.leg('aircraft', '2016-04-04', '2016-04-04', 'ORD', 'LAX',\n                'operatingDisclosure', 'changePlane', data);\n            var segment = dataObjects.segment(10, flight, 'cabin', 'bookingCode', 'bookingCodeCount', data, [leg]);\n            var slice = dataObjects.slices(10, [segment]);\n            var trip = dataObjects.trip(true, passengerCounts, data, [slice]);\n            var mock = sinon.mock(api).expects(\"request\")\n                .withExactArgs('POST', path, trip, pricingToken, 'change').returns(pricingResult);\n            result = fBird.post(path, trip, pricingToken, 'change');\n            mock.verify();\n            done();\n            expect(result).to.be.a(\"object\");\n            expect(result).to.be.not.a(\"number\");\n            expect(result).to.be.not.a(\"string\");\n            expect(result.code).to.equal(expectedResult.code);\n            expect(result.data.tripId).to.equal(expectedResult.data.tripId);\n        });\n\n\n        it('should return the request with the promise', function() {\n            var path = 'v1/pricing',\n                data = 'userName:password';\n            var promise = fBird.get('GET', path, data, '', 'noChange');\n            assert.isNotNull(promise.request);\n            assert.instanceOf(promise.request, XMLHttpRequest);\n\n        });\n\n        it('should return the correct status if a request has an empty response', function(done) {\n            var callback = sinon.spy();\n\n            fBird.post('v1/pricing', data);\n\n            this.requests[0].respond(400, {\n                    \"Authorization\": \"Basic \" + token\n                },\n                expectedResult);\n            var result = this.requests[0].response;\n            expect(this.requests.length).to.equal(1);\n            callback.calledWith(expectedResult);\n            expect(result.code).to.equal(expectedResult.code);\n            expect(result.message).to.equal(expectedResult.message);\n            done();\n        });\n\n        it('should make a POST against pricing object', function(done) {\n            fBird.post('v1/pricing', data).then(function(res) {\n                assert.equal(res.code, 200);\n                assert.equal(this.requests[0].method, 'POST');\n                done();\n            }.bind(this)).catch(function(err) {\n                done(err);\n            });\n            this.requests[0].respond(200, {\n                    'Authorization': 'Basic ' + token\n                },\n                expectedResult);\n        });\n\n        it('should trigger a promise catch on a 403 with bad JSON', function() {\n            fBird.post('v1/pricing', '').then(function(res) {\n                assert(res, 200);\n                //assert.fail('dXNlck5hbWU6WE5SMGc1cDN3NVYwVmxpL1UvaXJzQlp6R3VJPToxNDYwMjA5OTM2NzI5', res.message);\n            }.bind(this)).catch(function(err) {\n                assert.ok(err.actual, 'Promise should not resolve');\n                //assert.equal(err.status, 500, 'error.status is a 500');\n            });\n            this.requests[0].respond(403, {\n                    'Authorization': 'Basic userName:password'\n                },\n                '{\"code\":\"200\",\"message\":\"dXNlck5hbWU6WE5SMGc1cDN3NVYwVmxpL1UvaXJzQlp6R3VJPToxNDYwMjA5OTM2NzI5\"}');\n        });\n\n        it('should trigger a promise catch on a 500 with error JSON', function(done) {\n            fBird.post('v1/pricing').then(function(res) {\n                assert.fail('Promise should not resolve');\n            }.bind(this)).catch(function(err) {\n                assert.ok(err, 'Promise.catch is sent and error object');\n                assert.equal(err.status, 500, 'error.status is a 500');\n                assert.equal(err.message, 'server explosion');\n            });\n            this.requests[0].respond(500, {\n                    'Content-Type': 'text/json'\n                },\n                '{\"errors\": [{\"error_message\": \"server explosion\"}]}'\n            );\n            done();\n        });\n\n        it('should trigger a promise catch on a 404', function(done) {\n            fBird.post('v1/pricing').then(function(res) {\n                assert.fail('Promise should not resolve');\n            }.bind(this)).catch(function(err) {\n                assert.ok(err, 'Promise.catch is sent and error object');\n                assert.equal(err.status, 404, 'error.status is a 404');\n                assert.equal(err.message, 'not found');\n            });\n            this.requests[0].respond(404, {\n                    'Content-Type': 'text/json'\n                },\n                '{\"errors\": [{\"error_message\": \"not found\"}]}'\n            );\n            done();\n        });\n\n        it('should return the request with the promise in pricing api', function(done) {\n            var path = 'v1/pricing',\n                pricingToken = 'YWNjZXNzVG9rZW46ZFhObGNrNWhiV1U2V0U1U01HYzFjRE4zTlZZd1ZteHBMMVV2YVhKelFscDZSM1ZKUFRveE5EWXdNakE1T1RNMk56STU=',\n                invalidToken = 'YWNjZXNzVG9rZW46ZFhObGNrNWhiV1U2V0U1U01HYzFjRE4zTlZZd1ZteHBMMVV2YVhKelFscDZSM1ZKUFRveE5EWXdNakE1T1RNMk56';\n            /* =------------generating trip objects =----------------*/\n            var pricingResult = {\n                \"code\": \"200\",\n                \"data\": {\n                    \"id\": \"49256\",\n                    \"priceExpiration\": \"2016-04-22T17:21Z\",\n                    \"tripId\": \"28904\",\n                    \"data\": {\n                        \"key1\": \"val1\",\n                        \"kye2\": \"val2\"\n                    },\n                    \"regularPrice\": 19.0\n                }\n            };\n            var date = dataObjects.date(2016, 4, 4);\n            var flight = dataObjects.flight('AA', 124, date);\n            var passengerCounts = dataObjects.passengerCounts(1, 2, 0, 0, 0);\n            var data = dataObjects.data({\n                \"key1\": \"val1\",\n                \"kye2\": \"val2\"\n            });\n            var leg = dataObjects.leg('aircraft', '2016-04-04', '2016-04-04', 'ORD', 'LAX',\n                'operatingDisclosure', 'changePlane', data);\n            var segment = dataObjects.segment(10, flight, 'cabin', 'bookingCode', 'bookingCodeCount', data, [leg]);\n            var slice = dataObjects.slices(10, [segment]);\n            var trip = dataObjects.trip(true, passengerCounts, data, [slice]);\n\n\n            // var promise = api.request('POST', path, trip, pricingToken, 'change');\n            var invalidTokenRequest = api.request('POST', path, trip, invalidToken, 'change');\n            assert.isNotNull(invalidTokenRequest.request);\n            assert.instanceOf(invalidTokenRequest.request, XMLHttpRequest);\n            expect(pricingResult).to.be.a(\"object\");\n            expect(pricingResult).to.be.not.a(\"number\");\n            expect(pricingResult).to.be.not.a(\"string\");\n            done();\n        });\n\n        it('should return the correct status if a request has an empty response', function(done) {\n            var path = 'v1/pricing'\n            var promise = api.request('POST', path, data, '', 'noChange');\n            this.requests[0].respond(200, {\n                    \"Authorization\": \"Basic \"\n                },\n                JSON.stringify(data));\n            assert.equal(promise.request.status, 200);\n            // assert.equal(promise.request.message, 'HTTP Error: 500');\n            done();\n        });\n    });\n\n    describe(\"Purchase\", () => {\n\n        var data = {\n            \"priceRequestId\": \"24776\",\n            \"clientNonce\": \"string\",\n            \"priceTier\": \"GOLD\",\n            \"trip\": {\n                \"id\": \"78000\",\n                \"personInfo\": [{\n                    \"gender\": \"male\",\n                    \"firstName\": \"string\",\n                    \"lastName\": \"string\",\n                    \"middleName\": \"string\",\n                    \"dateOfBirth\": {\n                        \"year\": 1990,\n                        \"month\": 1,\n                        \"day\": 1\n                    },\n                    \"phone\": \"string\",\n                    \"email\": \"string\",\n                    \"isDeciderToPay\": true,\n                    \"isPayer\": true,\n                    \"isPassenger\": true,\n                    \"isBookingPerson\": true\n                }]\n            },\n            \"pciTransactionId\": \"pciTransactionId\",\n            \"data\": {\n                \"key1\": \"val1\",\n                \"kye2\": \"val2\"\n            }\n        };\n\n        var token = 'dXNlck5hbWU6cGFzc3dvcmQ=';\n\n        var expectedResult = JSON.stringify({\n            \"purchaseId\": \"32880\",\n            \"purchaseTotal\": 19.0,\n            \"priceRequestId\": \"24776\",\n            \"encClientNonce\": \"SHA256Base64url\",\n            \"trip\": {\n                \"id\": \"78000\",\n                \"data\": {\n                    \"key1\": \"val1\",\n                    \"kye2\": \"val2\"\n                }\n            },\n            \"pciTransactionId\": \"pciTransactionId\",\n            \"data\": {\n                \"key1\": \"val1\",\n                \"kye2\": \"val2\"\n            }\n        });\n\n        /** @test {fBird.post /v1/purchase} */\n\n        it('should call purchase API post method', function(done) {\n\n            var data = dataObjects.data({\n                \"key1\": \"val1\",\n                \"kye2\": \"val2\"\n            });\n            var result;\n            var pricingToken = 'YWNjZXNzVG9rZW46ZFhObGNrNWhiV1U2V0U1U01HYzFjRE4zTlZZd1ZteHBMMVV2YVhKelFscDZSM1ZKUFRveE5EWXdNakE1T1RNMk56STU=';\n            var path = 'http://localhost:8181/v1/purchase';\n            var purchaseResult = {\n                \"code\": \"200\",\n                \"data\": {\n                    \"id\": \"49256\",\n                    \"priceExpiration\": \"2016-04-22T17:21Z\",\n                    \"tripId\": \"28904\",\n                    \"data\": {\n                        \"key1\": \"val1\",\n                        \"kye2\": \"val2\"\n                    },\n                    \"regularPrice\": 19.0\n                }\n            };\n            var expectedResult = {\n                \"code\": \"200\",\n                \"data\": {\n                    \"id\": \"49256\",\n                    \"priceExpiration\": \"2016-04-22T17:21Z\",\n                    \"tripId\": \"28904\",\n                    \"data\": {\n                        \"key1\": \"val1\",\n                        \"kye2\": \"val2\"\n                    },\n                    \"regularPrice\": 19.0\n                }\n            };\n            /* =------------generating purchase objects =----------------*/\n\n            var dateOfBirth = dataObjects.dateOfBirth(1990, 1, 1);\n            var personInfo = dataObjects.personInfo('male', 'string', 'string', 'string', dateOfBirth, 'string', 'string', true, true, true, true);\n            var tripdata = dataObjects.tripData(result.data.tripId, [personInfo]);\n            var purchase = dataObjects.purchaseData(result.data.id, 'string', 'GOLD', tripdata, 'pciTransactionId', data);\n\n            var mock = sinon.mock(api).expects(\"request\")\n                .withExactArgs('POST', path, purchase, pricingToken, 'change').returns(purchaseResult);\n            result = fBird.post(path, purchase, pricingToken, 'change');\n            mock.verify();\n            done();\n            expect(result).to.be.a(\"object\");\n            expect(result).to.be.not.a(\"number\");\n            expect(result).to.be.not.a(\"string\");\n            expect(result.code).to.equal(expectedResult.code);\n            expect(result.data.tripId).to.equal(expectedResult.data.tripId);\n        });\n\n\n        it('should return the request with the promise', function() {\n            var path = 'v1/purchase',\n                data = 'userName:password';\n            var promise = fBird.get('GET', path, data, '', 'noChange');\n            assert.isNotNull(promise.request);\n            assert.instanceOf(promise.request, XMLHttpRequest);\n        });\n\n        it('should return the correct status if a request has an empty response', function() {\n            var callback = sinon.spy();\n\n            fBird.post('v1/purchase', data);\n\n            this.requests[0].respond(400, {\n                    \"Authorization\": \"Basic \" + token\n                },\n                expectedResult);\n            var result = this.requests[0].response;\n            expect(this.requests.length).to.equal(1);\n            callback.calledWith(expectedResult);\n            expect(result.code).to.equal(expectedResult.code);\n            expect(result.message).to.equal(expectedResult.message);\n        });\n\n        it('should make a POST against purchase object', function(done) {\n\n            fBird.post('v1/purchase', data).then(function(res) {\n                assert.equal(this.requests[0].method, 'POST');\n                done();\n            }.bind(this)).catch(function(err) {\n                done(err);\n            });\n            this.requests[0].respond(200, {\n                    'Authorization': 'Basic ' + token\n                },\n                expectedResult);\n        });\n\n        it('should trigger a promise catch on a 403 with bad JSON', function(done) {\n            fBird.post('v1/purchase', '').then(function(res) {\n                assert(res, 200);\n                //assert.fail('dXNlck5hbWU6WE5SMGc1cDN3NVYwVmxpL1UvaXJzQlp6R3VJPToxNDYwMjA5OTM2NzI5', res.message);\n                //done(res);\n            }.bind(this)).catch(function(err) {\n                assert.ok(err.actual, 'Promise should not resolve');\n                done(err);\n                //assert.equal(err.status, 500, 'error.status is a 500');\n            });\n            this.requests[0].respond(403, {\n                    'Authorization': 'Basic userName:password'\n                },\n                '{\"code\":\"200\",\"message\":\"dXNlck5hbWU6WE5SMGc1cDN3NVYwVmxpL1UvaXJzQlp6R3VJPToxNDYwMjA5OTM2NzI5\"}');\n            done()\n        });\n\n        it('should trigger a promise catch on a 500 with error JSON', function(done) {\n            fBird.post('v1/purchase').then(function(res) {\n                assert.fail('Promise should not resolve');\n            }.bind(this)).catch(function(err) {\n                assert.ok(err, 'Promise.catch is sent and error object');\n                assert.equal(err.status, 500, 'error.status is a 500');\n                assert.equal(err.message, 'server explosion');\n            });\n            this.requests[0].respond(500, {\n                    'Content-Type': 'text/json'\n                },\n                '{\"errors\": [{\"error_message\": \"server explosion\"}]}'\n            );\n            done();\n        });\n\n        it('should trigger a promise catch on a 404', function(done) {\n            fBird.post('v1/purchase').then(function(res) {\n                assert.fail('Promise should not resolve');\n            }.bind(this)).catch(function(err) {\n                assert.ok(err, 'Promise.catch is sent and error object');\n                assert.equal(err.status, 404, 'error.status is a 404');\n                assert.equal(err.message, 'not found');\n            });\n            this.requests[0].respond(404, {\n                    'Content-Type': 'text/json'\n                },\n                '{\"errors\": [{\"error_message\": \"not found\"}]}'\n            );\n            done();\n        });\n    });\n});\n"
+  },
+  {
+    "__docId__": 169,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe0",
+    "testId": 0,
+    "memberof": "test/ApiTest.js",
+    "testDepth": 0,
+    "longname": "test/ApiTest.js~describe0",
+    "access": null,
+    "description": "API calls",
+    "lineNumber": 19,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{API}"
+      }
+    ],
+    "testTargets": [
+      "API"
+    ]
+  },
+  {
+    "__docId__": 170,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe1",
+    "testId": 1,
+    "memberof": "test/ApiTest.js~describe0",
+    "testDepth": 1,
+    "longname": "test/ApiTest.js~describe0.describe1",
+    "access": null,
+    "description": "Authentication",
+    "lineNumber": 39
+  },
+  {
+    "__docId__": 171,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it2",
+    "testId": 2,
+    "memberof": "test/ApiTest.js~describe0.describe1",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe1.it2",
+    "access": null,
+    "description": "should call get and return token",
+    "lineNumber": 42,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{fBird.get /v1/authenticate}"
+      }
+    ],
+    "testTargets": [
+      "fBird.get /v1/authenticate"
+    ]
+  },
+  {
+    "__docId__": 172,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it3",
+    "testId": 3,
+    "memberof": "test/ApiTest.js~describe0.describe1",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe1.it3",
+    "access": null,
+    "description": "should return the request with the promise",
+    "lineNumber": 68
+  },
+  {
+    "__docId__": 173,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it4",
+    "testId": 4,
+    "memberof": "test/ApiTest.js~describe0.describe1",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe1.it4",
+    "access": null,
+    "description": "should return the correct status if a request has an empty response",
+    "lineNumber": 76
+  },
+  {
+    "__docId__": 174,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it5",
+    "testId": 5,
+    "memberof": "test/ApiTest.js~describe0.describe1",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe1.it5",
+    "access": null,
+    "description": "should make a GET against trip object",
+    "lineNumber": 97
+  },
+  {
+    "__docId__": 175,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it6",
+    "testId": 6,
+    "memberof": "test/ApiTest.js~describe0.describe1",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe1.it6",
+    "access": null,
+    "description": "should trigger a promise catch on a 403 with bad JSON",
+    "lineNumber": 111
+  },
+  {
+    "__docId__": 176,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it7",
+    "testId": 7,
+    "memberof": "test/ApiTest.js~describe0.describe1",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe1.it7",
+    "access": null,
+    "description": "should trigger a promise catch on a 500 with error JSON",
+    "lineNumber": 128
+  },
+  {
+    "__docId__": 177,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it8",
+    "testId": 8,
+    "memberof": "test/ApiTest.js~describe0.describe1",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe1.it8",
+    "access": null,
+    "description": "should trigger a promise catch on a 404",
+    "lineNumber": 143
+  },
+  {
+    "__docId__": 178,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it9",
+    "testId": 9,
+    "memberof": "test/ApiTest.js~describe0.describe1",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe1.it9",
+    "access": null,
+    "description": "get basic authenticated token",
+    "lineNumber": 158
+  },
+  {
+    "__docId__": 179,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it10",
+    "testId": 10,
+    "memberof": "test/ApiTest.js~describe0.describe1",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe1.it10",
+    "access": null,
+    "description": "should return the correct status if a request has an empty response",
+    "lineNumber": 171
+  },
+  {
+    "__docId__": 180,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe11",
+    "testId": 11,
+    "memberof": "test/ApiTest.js~describe0",
+    "testDepth": 1,
+    "longname": "test/ApiTest.js~describe0.describe11",
+    "access": null,
+    "description": "pricing",
+    "lineNumber": 185
+  },
+  {
+    "__docId__": 181,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it12",
+    "testId": 12,
+    "memberof": "test/ApiTest.js~describe0.describe11",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe11.it12",
+    "access": null,
+    "description": "should call pricing API post method",
+    "lineNumber": 254,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{fBird.post /v1/pricing}"
+      }
+    ],
+    "testTargets": [
+      "fBird.post /v1/pricing"
+    ]
+  },
+  {
+    "__docId__": 182,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it13",
+    "testId": 13,
+    "memberof": "test/ApiTest.js~describe0.describe11",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe11.it13",
+    "access": null,
+    "description": "should return the request with the promise",
+    "lineNumber": 314
+  },
+  {
+    "__docId__": 183,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it14",
+    "testId": 14,
+    "memberof": "test/ApiTest.js~describe0.describe11",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe11.it14",
+    "access": null,
+    "description": "should return the correct status if a request has an empty response",
+    "lineNumber": 323
+  },
+  {
+    "__docId__": 184,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it15",
+    "testId": 15,
+    "memberof": "test/ApiTest.js~describe0.describe11",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe11.it15",
+    "access": null,
+    "description": "should make a POST against pricing object",
+    "lineNumber": 340
+  },
+  {
+    "__docId__": 185,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it16",
+    "testId": 16,
+    "memberof": "test/ApiTest.js~describe0.describe11",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe11.it16",
+    "access": null,
+    "description": "should trigger a promise catch on a 403 with bad JSON",
+    "lineNumber": 354
+  },
+  {
+    "__docId__": 186,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it17",
+    "testId": 17,
+    "memberof": "test/ApiTest.js~describe0.describe11",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe11.it17",
+    "access": null,
+    "description": "should trigger a promise catch on a 500 with error JSON",
+    "lineNumber": 368
+  },
+  {
+    "__docId__": 187,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it18",
+    "testId": 18,
+    "memberof": "test/ApiTest.js~describe0.describe11",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe11.it18",
+    "access": null,
+    "description": "should trigger a promise catch on a 404",
+    "lineNumber": 384
+  },
+  {
+    "__docId__": 188,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it19",
+    "testId": 19,
+    "memberof": "test/ApiTest.js~describe0.describe11",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe11.it19",
+    "access": null,
+    "description": "should return the request with the promise in pricing api",
+    "lineNumber": 400
+  },
+  {
+    "__docId__": 189,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it20",
+    "testId": 20,
+    "memberof": "test/ApiTest.js~describe0.describe11",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe11.it20",
+    "access": null,
+    "description": "should return the correct status if a request has an empty response",
+    "lineNumber": 442
+  },
+  {
+    "__docId__": 190,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe21",
+    "testId": 21,
+    "memberof": "test/ApiTest.js~describe0",
+    "testDepth": 1,
+    "longname": "test/ApiTest.js~describe0.describe21",
+    "access": null,
+    "description": "Purchase",
+    "lineNumber": 455
+  },
+  {
+    "__docId__": 191,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it22",
+    "testId": 22,
+    "memberof": "test/ApiTest.js~describe0.describe21",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe21.it22",
+    "access": null,
+    "description": "should call purchase API post method",
+    "lineNumber": 511,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{fBird.post /v1/purchase}"
+      }
+    ],
+    "testTargets": [
+      "fBird.post /v1/purchase"
+    ]
+  },
+  {
+    "__docId__": 192,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it23",
+    "testId": 23,
+    "memberof": "test/ApiTest.js~describe0.describe21",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe21.it23",
+    "access": null,
+    "description": "should return the request with the promise",
+    "lineNumber": 566
+  },
+  {
+    "__docId__": 193,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it24",
+    "testId": 24,
+    "memberof": "test/ApiTest.js~describe0.describe21",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe21.it24",
+    "access": null,
+    "description": "should return the correct status if a request has an empty response",
+    "lineNumber": 574
+  },
+  {
+    "__docId__": 194,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it25",
+    "testId": 25,
+    "memberof": "test/ApiTest.js~describe0.describe21",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe21.it25",
+    "access": null,
+    "description": "should make a POST against purchase object",
+    "lineNumber": 590
+  },
+  {
+    "__docId__": 195,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it26",
+    "testId": 26,
+    "memberof": "test/ApiTest.js~describe0.describe21",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe21.it26",
+    "access": null,
+    "description": "should trigger a promise catch on a 403 with bad JSON",
+    "lineNumber": 604
+  },
+  {
+    "__docId__": 196,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it27",
+    "testId": 27,
+    "memberof": "test/ApiTest.js~describe0.describe21",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe21.it27",
+    "access": null,
+    "description": "should trigger a promise catch on a 500 with error JSON",
+    "lineNumber": 621
+  },
+  {
+    "__docId__": 197,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it28",
+    "testId": 28,
+    "memberof": "test/ApiTest.js~describe0.describe21",
+    "testDepth": 2,
+    "longname": "test/ApiTest.js~describe0.describe21.it28",
+    "access": null,
+    "description": "should trigger a promise catch on a 404",
+    "lineNumber": 637
+  },
+  {
+    "__docId__": 198,
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "test/ObjectTest.js",
+    "memberof": null,
+    "longname": "test/ObjectTest.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 4,
+    "content": "/**\n * Created by priyanka on 25/4/16.\n */\nvar chai = require('chai');\nvar expect = require('chai').expect;\nvar assert = require('chai').assert;\nvar word = require('../../src/objects');\nchai.should();\n\ndescribe('JS Objects', function() {\n\n    /** @test {Flight} */\n\n    it('Flight object', ()=>  {\n        var flightObj = dataObjects.flight('AA', \"d\", \"2016-01-26\");\n        var flightTestObj = {airlineCode: \"AA\", flightNumber: \"d\", date: \"2016-01-26\"};\n        var flightFalseObj = {airlineCode: undefined, flightNumber: \"e\", date: \"2016-01-26\"};\n\n        expect(flightObj).to.be.a('Object');\n\n        expect(flightObj).to.be.not.a('string');\n        expect(JSON.stringify(flightObj)).to.be.a('string');\n\n        expect(flightObj).to.be.not.a('null');\n        expect(flightObj).to.be.not.a('undefined');\n\n        expect(flightObj.airlineCode).to.be.not.a('undefined');\n        expect(flightFalseObj.airlineCode).to.be.a('undefined');\n\n        assert.sameMembers([flightTestObj.flightNumber], [flightObj.flightNumber], 'same value');\n        expect(flightTestObj.flightNumber).to.not.equal(flightFalseObj.flightNumber);\n\n        assert.sameMembers([JSON.stringify(flightTestObj)], [JSON.stringify(flightObj)], 'same members');\n        expect(JSON.stringify(flightFalseObj)).to.not.equal(JSON.stringify(flightObj));\n    });\n\n    /** @test {PassengerCount} */\n\n    it('PassengerCount object', ()=>  {\n        var passCountObj = dataObjects.passengerCounts(1,2,1,0,0);\n\n        var passCountTestObj = { adult:1, child:2, infantInLap:1, infantInSeat:0, senior:0 };\n        var passCountFalseObj = { adult:undefined, child:1, infantInLap:1, infantInSeat:0, senior:0 };\n\n        expect(passCountObj).to.be.a('Object');\n\n        expect(passCountObj).to.be.not.a('string');\n        expect(JSON.stringify(passCountObj)).to.be.a('string');\n\n        expect(passCountObj).to.be.not.a('null');\n        expect(passCountObj).to.be.not.a('undefined');\n\n        expect(passCountObj.adult).to.be.not.a('undefined');\n        expect(passCountFalseObj.adult).to.be.a('undefined');\n\n        assert.sameMembers([passCountTestObj.child], [passCountObj.child], 'same value');\n        expect(passCountTestObj.child).to.not.equal(passCountFalseObj.child);\n\n        assert.sameMembers([JSON.stringify(passCountTestObj)], [JSON.stringify(passCountObj)], 'same members');\n        expect(JSON.stringify(passCountFalseObj)).to.not.equal(JSON.stringify(passCountObj));\n    });\n\n    /** @test {Date} */\n\n    it('Date object', ()=>  {\n        var dateObj = dataObjects.date(2016,1,28);\n\n        expect(dateObj).to.be.a('Object');\n        expect(dateObj).to.be.not.a('number');\n        expect(dateObj).to.be.not.a('string');\n    });\n\n    /** @test {Leg} */\n\n    it('Leg object', ()=>  {\n        var dataObj = {\n            key1 : 'key1',\n            key2  : 'kek2'\n        };\n\n        var legObj = dataObjects.leg('aircraft', '2016-04-04','2016-04-04', 'ORD', 'LAX',\n            'operatingDisclosure', 'changePlane', dataObj);\n\n        var legTestObj = { aircraft: \"aircraft\", arrival: \"2016-04-04\", departure: \"2016-04-04\",\n            origin: \"ORD\" , destination: \"LAX\", operatingDisclosure: \"operatingDisclosure\" ,\n            changePlane: \"changePlane\", data: dataObj};\n        var legFalseObj = { aircraft: undefined, arrival: \"2016-04-10\", departure: \"2016-04-04\",\n            origin: \"ORD\" , destination: null, operatingDisclosure: \" \" ,\n            changePlane: \"changePlane\", data: \"data\"};\n\n        expect(legObj).to.be.a('Object');\n\n        expect(legObj).to.be.not.a('string');\n        expect(JSON.stringify(legObj)).to.be.a('string');\n\n        expect(legObj).to.be.not.a('null');\n        expect(legObj).to.be.not.a('undefined');\n\n        expect(legObj.aircraft).to.be.not.a('undefined');\n        expect(legFalseObj.aircraft).to.be.a('undefined');\n\n        assert.sameMembers([legTestObj.arrival], [legObj.arrival], 'same value');\n        expect(legTestObj.arrival).to.not.equal(legFalseObj.arrival);\n\n        assert.sameMembers([JSON.stringify(legTestObj)], [JSON.stringify(legObj)], 'same members');\n        expect(JSON.stringify(legFalseObj)).to.not.equal(JSON.stringify(legObj));\n    });\n\n    /** @test {Segment} */\n\n    it('Segment object', ()=>  {\n        var dataObj = {\n            key1 : 'key1',\n            key2 : 'kek2'\n        };\n\n        var legObj = dataObjects.leg('aircraft', '2016-04-04','2016-04-04', 'ORD', 'LAX',\n            'operatingDisclosure', 'changePlane', dataObj);\n\n        var segmentObj = dataObjects.segment(10, 'flight', 'cabin', 'bookingCode', 'bookingCodeCount', dataObj, legObj);\n\n        var segmentTestObj = { duration: 10, flight: 'flight', cabin: 'cabin',\n            bookingCode: 'bookingCode' , bookingCodeCount: 'bookingCodeCount', data: dataObj ,\n            leg: legObj};\n\n        var segmentFalseObj = { duration: undefined, flight: 'airlines', cabin: 'cabin',\n            bookingCode: 'bookingCode' , bookingCodeCount: 'bookingCodeCount', data: 'data' ,\n            leg: \"legObj\"};\n\n        expect(segmentObj).to.be.a('Object');\n\n        expect(segmentObj).to.be.not.a('string');\n        expect(JSON.stringify(segmentObj)).to.be.a('string');\n\n        expect(segmentObj).to.be.not.a('null');\n        expect(segmentObj).to.be.not.a('undefined');\n\n        expect(segmentObj.duration).to.be.not.a('undefined');\n        expect(segmentFalseObj.duration).to.be.a('undefined');\n\n        assert.sameMembers([segmentTestObj.leg], [segmentObj.leg], 'same value');\n        expect(segmentTestObj.leg).to.not.equal(segmentFalseObj.leg);\n\n        assert.sameMembers([JSON.stringify(segmentTestObj)], [JSON.stringify(segmentObj)], 'same members');\n        expect(JSON.stringify(segmentFalseObj)).to.not.equal(JSON.stringify(segmentObj));\n    });\n\n    /** @test {Slice} */\n\n    it('Slice object', ()=>  {\n        var dataObj = {\n            key1 : 'key1',\n            key2 : 'kek2'\n        };\n\n        var legObj = dataObjects.leg('aircraft', '2016-04-04','2016-04-04', 'ORD', 'LAX',\n            'operatingDisclosure', 'changePlane', dataObj);\n\n        var segmentObj = dataObjects.segment(10, 'flight', 'cabin', 'bookingCode', 'bookingCodeCount', dataObj , legObj);\n\n        var sliceObj = dataObjects.slices(10,segmentObj);\n\n        var sliceTestObj = {duration : 10,segments : segmentObj};\n        var sliceFalseObj = {duration : undefined,segments : 'segmentObj'};\n\n        expect(sliceObj).to.be.a('Object');\n\n        expect(sliceObj).to.be.not.a('string');\n        expect(JSON.stringify(sliceObj)).to.be.a('string');\n\n        expect(sliceObj).to.be.not.a('null');\n        expect(sliceObj).to.be.not.a('undefined');\n\n        expect(sliceObj.duration).to.be.not.a('undefined');\n        expect(sliceFalseObj.duration).to.be.a('undefined');\n\n        assert.sameMembers([sliceTestObj.segments], [sliceObj.segments], 'same value');\n        expect(sliceTestObj.segments).to.not.equal(sliceFalseObj.segments);\n\n        assert.sameMembers([JSON.stringify(sliceTestObj)], [JSON.stringify(sliceObj)], 'same members');\n        expect(JSON.stringify(sliceFalseObj)).to.not.equal(JSON.stringify(sliceObj));\n    });\n\n    /** @test {Trip} */\n\n    it('Trip object', ()=> {\n        var dataObj = {\n            key1 : 'key1',\n            key2 : 'kek2'\n        };\n\n        var legObj = dataObjects.leg('aircraft', '2016-04-04','2016-04-04', 'ORD', 'LAX',\n            'operatingDisclosure', 'changePlane', dataObj);\n\n        var segmentObj = dataObjects.segment(10, 'flight', 'cabin', 'bookingCode', 'bookingCodeCount', dataObj , legObj);\n\n        var sliceObj = dataObjects.slices(10,segmentObj);\n\n        var tripObj = dataObjects.trip(true,'passengerCounts',dataObj ,sliceObj);\n\n        var tripTestObj = {missedConnections : true,passengerCounts : 'passengerCounts', data : dataObj , slices : sliceObj};\n        var tripFalseObj = {missedConnections : undefined,passengerCounts : 'passengerCounts', data : 'data',slices : 'sliceObj'};\n\n        expect(tripObj).to.be.a('Object');\n\n        expect(tripObj).to.be.not.a('string');\n        expect(JSON.stringify(tripObj)).to.be.a('string');\n\n        expect(tripObj).to.be.not.a('null');\n        expect(tripObj).to.be.not.a('undefined');\n\n        expect(tripObj.missedConnections).to.be.not.a('undefined');\n        expect(tripFalseObj.missedConnections).to.be.a('undefined');\n\n        assert.sameMembers([tripTestObj.slices], [tripObj.slices], 'same value');\n        expect(tripTestObj.slices).to.not.equal(tripFalseObj.slices);\n\n        assert.sameMembers([JSON.stringify(tripTestObj)], [JSON.stringify(tripObj)], 'same members');\n        expect(JSON.stringify(tripFalseObj)).to.not.equal(JSON.stringify(tripObj));\n    });\n\n    /** @test {DateOfBirth} */\n\n    it('DateOfBirth object', ()=> {\n        var DOBObj = dataObjects.dateOfBirth(2016,1,28);\n\n        expect(DOBObj).to.be.a('Object');\n        expect(DOBObj).to.be.not.a('number');\n        expect(DOBObj).to.be.not.a('string');\n    });\n\n    /** @test {PersonDetails} */\n\n    it('PersonDetails object', ()=>  {\n        var DOBObj = dataObjects.dateOfBirth(2016,1,28);\n\n        var personInfoObj = dataObjects.personInfo('male','string','string','string',DOBObj,'string','string',true,true,true,true);\n\n        var personInfoTestObj = {gender : 'male', firstName : 'string', lastName : 'string' , middleName : 'string' , dateOfBirth : DOBObj,\n            phone : 'string', email : 'string', isDeciderToPay : true, isPayer: true , isPassenger : true, isBookingPerson : true};\n        var personInfoFalseObj = {gender : 'male', firstName : undefined, lastName : 'string' , middleName : 'string' , dateOfBirth : 'DOBObj',\n            phone : 'string', email : 'string', isDeciderToPay : true, isPayer: true , isPassenger : true, isBookingPerson : false};\n\n        expect(personInfoObj).to.be.a('Object');\n\n        expect(personInfoObj).to.be.not.a('string');\n        expect(JSON.stringify(personInfoObj)).to.be.a('string');\n\n        expect(personInfoObj).to.be.not.a('null');\n        expect(personInfoObj).to.be.not.a('undefined');\n\n        expect(personInfoObj.firstName).to.be.not.a('undefined');\n        expect(personInfoFalseObj.firstName).to.be.a('undefined');\n\n        assert.sameMembers([personInfoTestObj.dateOfBirth], [personInfoObj.dateOfBirth], 'same value');\n        expect(personInfoTestObj.dateOfBirth).to.not.equal(personInfoFalseObj.dateOfBirth);\n\n        assert.sameMembers([JSON.stringify(personInfoTestObj)], [JSON.stringify(personInfoObj)], 'same members');\n        expect(JSON.stringify(personInfoFalseObj)).to.not.equal(JSON.stringify(personInfoObj));\n    });\n\n    /** @test {TripData} */\n\n    it('TripData object', ()=>  {\n        var DOBObj = dataObjects.dateOfBirth(2016,1,28);\n\n        var personInfoObj = dataObjects.personInfo('male','string','string','string',DOBObj,'string','string',true,true,true,true);\n\n        var tripDataObj = dataObjects.tripData(4565, personInfoObj)\n\n        var tripDataTestObj = {id : 4565, personInfo : personInfoObj};\n        var tripDataFalseObj = {id : undefined, personInfo : 'personInfoObj'};\n\n        expect(tripDataObj).to.be.a('Object');\n\n        expect(tripDataObj).to.be.not.a('string');\n        expect(JSON.stringify(tripDataObj)).to.be.a('string');\n\n        expect(tripDataObj).to.be.not.a('null');\n        expect(tripDataObj).to.be.not.a('undefined');\n\n        expect(tripDataObj.id).to.be.not.a('undefined');\n        expect(tripDataFalseObj.id).to.be.a('undefined');\n\n        assert.sameMembers([tripDataTestObj.personInfo], [tripDataObj.personInfo], 'same value');\n        expect(tripDataTestObj.personInfo).to.not.equal(tripDataFalseObj.personInfo);\n\n        assert.sameMembers([JSON.stringify(tripDataTestObj)], [JSON.stringify(tripDataObj)], 'same members');\n        expect(JSON.stringify(tripDataFalseObj)).to.not.equal(JSON.stringify(tripDataObj));\n    });\n\n    /** @test {PurchaseData} */\n\n    it('PurchaseData object', ()=>  {\n        var dataObj = {\n            key1 : 'key1',\n            key2 : 'kek2'\n        };\n\n        var DOBObj = dataObjects.dateOfBirth(2016,1,28);\n\n        var personInfoObj = dataObjects.personInfo('male','string','string','string',DOBObj,'string','string',true,true,true,true);\n\n        var tripDataObj = dataObjects.tripData(4565, personInfoObj)\n\n        var purchaseDataObj = dataObjects.purchaseData(6789,'string','GOLD',tripDataObj,'pciTransactionId',dataObj);\n        var purchaseDataTestObj = { priceRequestId:6789 , clientNonce:'string' , priceTier:'GOLD' ,trip: tripDataObj, pciTransactionId : 'pciTransactionId', data: dataObj};\n        var purchaseDataFalseObj = { priceRequestId:undefined , clientNonce:'string' , priceTier:'GOLD' ,trip: 'tripDataObj', pciTransactionId : 'pciTransactionId', data: dataObj};\n\n        expect(purchaseDataObj).to.be.a('Object');\n\n        expect(purchaseDataObj).to.be.not.a('string');\n        expect(JSON.stringify(purchaseDataObj)).to.be.a('string');\n\n        expect(purchaseDataObj).to.be.not.a('null');\n        expect(purchaseDataObj).to.be.not.a('undefined');\n\n        expect(purchaseDataObj.priceRequestId).to.be.not.a('undefined');\n        expect(purchaseDataFalseObj.priceRequestId).to.be.a('undefined');\n\n        assert.sameMembers([purchaseDataTestObj.trip], [purchaseDataObj.trip], 'same value');\n        expect(purchaseDataTestObj.trip).to.not.equal(purchaseDataFalseObj.trip);\n\n        assert.sameMembers([JSON.stringify(purchaseDataTestObj)], [JSON.stringify(purchaseDataObj)], 'same members');\n        expect(JSON.stringify(purchaseDataFalseObj)).to.not.equal(JSON.stringify(purchaseDataObj));\n    })\n});\n"
+  },
+  {
+    "__docId__": 199,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe29",
+    "testId": 29,
+    "memberof": "test/ObjectTest.js",
+    "testDepth": 0,
+    "longname": "test/ObjectTest.js~describe29",
+    "access": null,
+    "description": "JS Objects",
+    "lineNumber": 10
+  },
+  {
+    "__docId__": 200,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it30",
+    "testId": 30,
+    "memberof": "test/ObjectTest.js~describe29",
+    "testDepth": 1,
+    "longname": "test/ObjectTest.js~describe29.it30",
+    "access": null,
+    "description": "Flight object",
+    "lineNumber": 14,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{Flight}"
+      }
+    ],
+    "testTargets": [
+      "Flight"
+    ]
+  },
+  {
+    "__docId__": 201,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it31",
+    "testId": 31,
+    "memberof": "test/ObjectTest.js~describe29",
+    "testDepth": 1,
+    "longname": "test/ObjectTest.js~describe29.it31",
+    "access": null,
+    "description": "PassengerCount object",
+    "lineNumber": 39,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{PassengerCount}"
+      }
+    ],
+    "testTargets": [
+      "PassengerCount"
+    ]
+  },
+  {
+    "__docId__": 202,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it32",
+    "testId": 32,
+    "memberof": "test/ObjectTest.js~describe29",
+    "testDepth": 1,
+    "longname": "test/ObjectTest.js~describe29.it32",
+    "access": null,
+    "description": "Date object",
+    "lineNumber": 65,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{Date}"
+      }
+    ],
+    "testTargets": [
+      "Date"
+    ]
+  },
+  {
+    "__docId__": 203,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it33",
+    "testId": 33,
+    "memberof": "test/ObjectTest.js~describe29",
+    "testDepth": 1,
+    "longname": "test/ObjectTest.js~describe29.it33",
+    "access": null,
+    "description": "Leg object",
+    "lineNumber": 75,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{Leg}"
+      }
+    ],
+    "testTargets": [
+      "Leg"
+    ]
+  },
+  {
+    "__docId__": 204,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it34",
+    "testId": 34,
+    "memberof": "test/ObjectTest.js~describe29",
+    "testDepth": 1,
+    "longname": "test/ObjectTest.js~describe29.it34",
+    "access": null,
+    "description": "Segment object",
+    "lineNumber": 111,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{Segment}"
+      }
+    ],
+    "testTargets": [
+      "Segment"
+    ]
+  },
+  {
+    "__docId__": 205,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it35",
+    "testId": 35,
+    "memberof": "test/ObjectTest.js~describe29",
+    "testDepth": 1,
+    "longname": "test/ObjectTest.js~describe29.it35",
+    "access": null,
+    "description": "Slice object",
+    "lineNumber": 150,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{Slice}"
+      }
+    ],
+    "testTargets": [
+      "Slice"
+    ]
+  },
+  {
+    "__docId__": 206,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it36",
+    "testId": 36,
+    "memberof": "test/ObjectTest.js~describe29",
+    "testDepth": 1,
+    "longname": "test/ObjectTest.js~describe29.it36",
+    "access": null,
+    "description": "Trip object",
+    "lineNumber": 186,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{Trip}"
+      }
+    ],
+    "testTargets": [
+      "Trip"
+    ]
+  },
+  {
+    "__docId__": 207,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it37",
+    "testId": 37,
+    "memberof": "test/ObjectTest.js~describe29",
+    "testDepth": 1,
+    "longname": "test/ObjectTest.js~describe29.it37",
+    "access": null,
+    "description": "DateOfBirth object",
+    "lineNumber": 224,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{DateOfBirth}"
+      }
+    ],
+    "testTargets": [
+      "DateOfBirth"
+    ]
+  },
+  {
+    "__docId__": 208,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it38",
+    "testId": 38,
+    "memberof": "test/ObjectTest.js~describe29",
+    "testDepth": 1,
+    "longname": "test/ObjectTest.js~describe29.it38",
+    "access": null,
+    "description": "PersonDetails object",
+    "lineNumber": 234,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{PersonDetails}"
+      }
+    ],
+    "testTargets": [
+      "PersonDetails"
+    ]
+  },
+  {
+    "__docId__": 209,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it39",
+    "testId": 39,
+    "memberof": "test/ObjectTest.js~describe29",
+    "testDepth": 1,
+    "longname": "test/ObjectTest.js~describe29.it39",
+    "access": null,
+    "description": "TripData object",
+    "lineNumber": 264,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{TripData}"
+      }
+    ],
+    "testTargets": [
+      "TripData"
+    ]
+  },
+  {
+    "__docId__": 210,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it40",
+    "testId": 40,
+    "memberof": "test/ObjectTest.js~describe29",
+    "testDepth": 1,
+    "longname": "test/ObjectTest.js~describe29.it40",
+    "access": null,
+    "description": "PurchaseData object",
+    "lineNumber": 294,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{PurchaseData}"
+      }
+    ],
+    "testTargets": [
+      "PurchaseData"
+    ]
+  }
+]

@@ -1,0 +1,5588 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "DateOfBirth",
+            "range": [
+              50,
+              61
+            ],
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 7
+              },
+              "end": {
+                "line": 4,
+                "column": 18
+              }
+            }
+          },
+          "range": [
+            50,
+            61
+          ],
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 7
+            },
+            "end": {
+              "line": 4,
+              "column": 18
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./DOBClass.js",
+        "raw": "'./DOBClass.js'",
+        "range": [
+          67,
+          82
+        ],
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 24
+          },
+          "end": {
+            "line": 4,
+            "column": 39
+          }
+        }
+      },
+      "range": [
+        43,
+        83
+      ],
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 40
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * Created by priyanka on 21/4/16.\n ",
+          "range": [
+            0,
+            42
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "Date",
+            "range": [
+              91,
+              95
+            ],
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 7
+              },
+              "end": {
+                "line": 5,
+                "column": 11
+              }
+            }
+          },
+          "range": [
+            91,
+            95
+          ],
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 7
+            },
+            "end": {
+              "line": 5,
+              "column": 11
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./DateClass.js",
+        "raw": "'./DateClass.js'",
+        "range": [
+          101,
+          117
+        ],
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 17
+          },
+          "end": {
+            "line": 5,
+            "column": 33
+          }
+        }
+      },
+      "range": [
+        84,
+        118
+      ],
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "Flight",
+            "range": [
+              126,
+              132
+            ],
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 7
+              },
+              "end": {
+                "line": 6,
+                "column": 13
+              }
+            }
+          },
+          "range": [
+            126,
+            132
+          ],
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 7
+            },
+            "end": {
+              "line": 6,
+              "column": 13
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./FlightClass.js",
+        "raw": "'./FlightClass.js'",
+        "range": [
+          138,
+          156
+        ],
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 19
+          },
+          "end": {
+            "line": 6,
+            "column": 37
+          }
+        }
+      },
+      "range": [
+        119,
+        157
+      ],
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "Leg",
+            "range": [
+              165,
+              168
+            ],
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 7
+              },
+              "end": {
+                "line": 7,
+                "column": 10
+              }
+            }
+          },
+          "range": [
+            165,
+            168
+          ],
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 7
+            },
+            "end": {
+              "line": 7,
+              "column": 10
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./LegClass.js",
+        "raw": "'./LegClass.js'",
+        "range": [
+          174,
+          189
+        ],
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 16
+          },
+          "end": {
+            "line": 7,
+            "column": 31
+          }
+        }
+      },
+      "range": [
+        158,
+        190
+      ],
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "PassengerCount",
+            "range": [
+              198,
+              212
+            ],
+            "loc": {
+              "start": {
+                "line": 8,
+                "column": 7
+              },
+              "end": {
+                "line": 8,
+                "column": 21
+              }
+            }
+          },
+          "range": [
+            198,
+            212
+          ],
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 7
+            },
+            "end": {
+              "line": 8,
+              "column": 21
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./PassengerCountClass.js",
+        "raw": "'./PassengerCountClass.js'",
+        "range": [
+          218,
+          244
+        ],
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 27
+          },
+          "end": {
+            "line": 8,
+            "column": 53
+          }
+        }
+      },
+      "range": [
+        191,
+        245
+      ],
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 54
+        }
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "PersonDetails",
+            "range": [
+              253,
+              266
+            ],
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 7
+              },
+              "end": {
+                "line": 9,
+                "column": 20
+              }
+            }
+          },
+          "range": [
+            253,
+            266
+          ],
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 7
+            },
+            "end": {
+              "line": 9,
+              "column": 20
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./PersonDetailsClass.js",
+        "raw": "'./PersonDetailsClass.js'",
+        "range": [
+          272,
+          297
+        ],
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 26
+          },
+          "end": {
+            "line": 9,
+            "column": 51
+          }
+        }
+      },
+      "range": [
+        246,
+        298
+      ],
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 9,
+          "column": 52
+        }
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "PurchaseData",
+            "range": [
+              306,
+              318
+            ],
+            "loc": {
+              "start": {
+                "line": 10,
+                "column": 7
+              },
+              "end": {
+                "line": 10,
+                "column": 19
+              }
+            }
+          },
+          "range": [
+            306,
+            318
+          ],
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 7
+            },
+            "end": {
+              "line": 10,
+              "column": 19
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./PurchaseDataClass.js",
+        "raw": "'./PurchaseDataClass.js'",
+        "range": [
+          324,
+          348
+        ],
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 25
+          },
+          "end": {
+            "line": 10,
+            "column": 49
+          }
+        }
+      },
+      "range": [
+        299,
+        349
+      ],
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 50
+        }
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "Segment",
+            "range": [
+              357,
+              364
+            ],
+            "loc": {
+              "start": {
+                "line": 11,
+                "column": 7
+              },
+              "end": {
+                "line": 11,
+                "column": 14
+              }
+            }
+          },
+          "range": [
+            357,
+            364
+          ],
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 7
+            },
+            "end": {
+              "line": 11,
+              "column": 14
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./SegmentClass.js",
+        "raw": "'./SegmentClass.js'",
+        "range": [
+          370,
+          389
+        ],
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 20
+          },
+          "end": {
+            "line": 11,
+            "column": 39
+          }
+        }
+      },
+      "range": [
+        350,
+        390
+      ],
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 40
+        }
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "Slice",
+            "range": [
+              398,
+              403
+            ],
+            "loc": {
+              "start": {
+                "line": 12,
+                "column": 7
+              },
+              "end": {
+                "line": 12,
+                "column": 12
+              }
+            }
+          },
+          "range": [
+            398,
+            403
+          ],
+          "loc": {
+            "start": {
+              "line": 12,
+              "column": 7
+            },
+            "end": {
+              "line": 12,
+              "column": 12
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./SliceClass.js",
+        "raw": "'./SliceClass.js'",
+        "range": [
+          409,
+          426
+        ],
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 18
+          },
+          "end": {
+            "line": 12,
+            "column": 35
+          }
+        }
+      },
+      "range": [
+        391,
+        427
+      ],
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 0
+        },
+        "end": {
+          "line": 12,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "Trip",
+            "range": [
+              435,
+              439
+            ],
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 7
+              },
+              "end": {
+                "line": 13,
+                "column": 11
+              }
+            }
+          },
+          "range": [
+            435,
+            439
+          ],
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 7
+            },
+            "end": {
+              "line": 13,
+              "column": 11
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./TripClass.js",
+        "raw": "'./TripClass.js'",
+        "range": [
+          445,
+          461
+        ],
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 17
+          },
+          "end": {
+            "line": 13,
+            "column": 33
+          }
+        }
+      },
+      "range": [
+        428,
+        462
+      ],
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 13,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "TripData",
+            "range": [
+              470,
+              478
+            ],
+            "loc": {
+              "start": {
+                "line": 14,
+                "column": 7
+              },
+              "end": {
+                "line": 14,
+                "column": 15
+              }
+            }
+          },
+          "range": [
+            470,
+            478
+          ],
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 7
+            },
+            "end": {
+              "line": 14,
+              "column": 15
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./TripDataClass.js",
+        "raw": "'./TripDataClass.js'",
+        "range": [
+          484,
+          504
+        ],
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 21
+          },
+          "end": {
+            "line": 14,
+            "column": 41
+          }
+        }
+      },
+      "range": [
+        463,
+        505
+      ],
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 0
+        },
+        "end": {
+          "line": 14,
+          "column": 42
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects is a global object, which returns a new instance of each class.\n * @typedef {Object} dataObjects\n ",
+          "range": [
+            507,
+            626
+          ],
+          "loc": {
+            "start": {
+              "line": 16,
+              "column": 0
+            },
+            "end": {
+              "line": 19,
+              "column": 3
+            }
+          }
+        },
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.flight returns a new instance of Flight class.\n * @typedef {Object} dataObjects.flight\n * @property {number} airlineCode - Airline code of the flight\n * @property {number} flightNumber - Flight number of the flight\n * @property {string} date - Departure date (format : YYYY-MM-DD)\n ",
+          "range": [
+            628,
+            931
+          ],
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 0
+            },
+            "end": {
+              "line": 27,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "flight",
+          "range": [
+            949,
+            955
+          ],
+          "loc": {
+            "start": {
+              "line": 29,
+              "column": 16
+            },
+            "end": {
+              "line": 29,
+              "column": 22
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "airlineCode",
+            "range": [
+              956,
+              967
+            ],
+            "loc": {
+              "start": {
+                "line": 29,
+                "column": 23
+              },
+              "end": {
+                "line": 29,
+                "column": 34
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "flightNumber",
+            "range": [
+              969,
+              981
+            ],
+            "loc": {
+              "start": {
+                "line": 29,
+                "column": 36
+              },
+              "end": {
+                "line": 29,
+                "column": 48
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "date",
+            "range": [
+              983,
+              987
+            ],
+            "loc": {
+              "start": {
+                "line": 29,
+                "column": 50
+              },
+              "end": {
+                "line": 29,
+                "column": 54
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "Flight",
+                  "range": [
+                    1004,
+                    1010
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 30,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 30,
+                      "column": 20
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "airlineCode",
+                    "range": [
+                      1011,
+                      1022
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 30,
+                        "column": 21
+                      },
+                      "end": {
+                        "line": 30,
+                        "column": 32
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "flightNumber",
+                    "range": [
+                      1024,
+                      1036
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 30,
+                        "column": 34
+                      },
+                      "end": {
+                        "line": 30,
+                        "column": 46
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "date",
+                    "range": [
+                      1038,
+                      1042
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 30,
+                        "column": 48
+                      },
+                      "end": {
+                        "line": 30,
+                        "column": 52
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  1000,
+                  1043
+                ],
+                "loc": {
+                  "start": {
+                    "line": 30,
+                    "column": 10
+                  },
+                  "end": {
+                    "line": 30,
+                    "column": 53
+                  }
+                }
+              },
+              "range": [
+                992,
+                1045
+              ],
+              "loc": {
+                "start": {
+                  "line": 30,
+                  "column": 2
+                },
+                "end": {
+                  "line": 31,
+                  "column": 0
+                }
+              }
+            }
+          ],
+          "range": [
+            988,
+            1046
+          ],
+          "loc": {
+            "start": {
+              "line": 29,
+              "column": 55
+            },
+            "end": {
+              "line": 31,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          940,
+          1046
+        ],
+        "loc": {
+          "start": {
+            "line": 29,
+            "column": 7
+          },
+          "end": {
+            "line": 31,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects is a global object, which returns a new instance of each class.\n * @typedef {Object} dataObjects\n ",
+            "range": [
+              507,
+              626
+            ],
+            "loc": {
+              "start": {
+                "line": 16,
+                "column": 0
+              },
+              "end": {
+                "line": 19,
+                "column": 3
+              }
+            }
+          },
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.flight returns a new instance of Flight class.\n * @typedef {Object} dataObjects.flight\n * @property {number} airlineCode - Airline code of the flight\n * @property {number} flightNumber - Flight number of the flight\n * @property {string} date - Departure date (format : YYYY-MM-DD)\n ",
+            "range": [
+              628,
+              931
+            ],
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 0
+              },
+              "end": {
+                "line": 27,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.passengerCounts returns a new instance of PassengerCount class.\n * @typedef {Object} dataObjects.passengerCounts\n * @property {number} adult - Count of adult passengers\n * @property {number} child - Count of child passengers\n * @property {number} infantInLap - Count of infant in lap passengers\n * @property {number} infantInSeat - Count of infant in seat passengers\n * @property {number} senior - Count of senior passengers\n ",
+            "range": [
+              1048,
+              1495
+            ],
+            "loc": {
+              "start": {
+                "line": 33,
+                "column": 0
+              },
+              "end": {
+                "line": 41,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        933,
+        1046
+      ],
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 0
+        },
+        "end": {
+          "line": 31,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects is a global object, which returns a new instance of each class.\n * @typedef {Object} dataObjects\n ",
+          "range": [
+            507,
+            626
+          ],
+          "loc": {
+            "start": {
+              "line": 16,
+              "column": 0
+            },
+            "end": {
+              "line": 19,
+              "column": 3
+            }
+          }
+        },
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.flight returns a new instance of Flight class.\n * @typedef {Object} dataObjects.flight\n * @property {number} airlineCode - Airline code of the flight\n * @property {number} flightNumber - Flight number of the flight\n * @property {string} date - Departure date (format : YYYY-MM-DD)\n ",
+          "range": [
+            628,
+            931
+          ],
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 0
+            },
+            "end": {
+              "line": 27,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.passengerCounts returns a new instance of PassengerCount class.\n * @typedef {Object} dataObjects.passengerCounts\n * @property {number} adult - Count of adult passengers\n * @property {number} child - Count of child passengers\n * @property {number} infantInLap - Count of infant in lap passengers\n * @property {number} infantInSeat - Count of infant in seat passengers\n * @property {number} senior - Count of senior passengers\n ",
+          "range": [
+            1048,
+            1495
+          ],
+          "loc": {
+            "start": {
+              "line": 33,
+              "column": 0
+            },
+            "end": {
+              "line": 41,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "passengerCounts",
+          "range": [
+            1513,
+            1528
+          ],
+          "loc": {
+            "start": {
+              "line": 43,
+              "column": 16
+            },
+            "end": {
+              "line": 43,
+              "column": 31
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "adult",
+            "range": [
+              1529,
+              1534
+            ],
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 32
+              },
+              "end": {
+                "line": 43,
+                "column": 37
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "child",
+            "range": [
+              1536,
+              1541
+            ],
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 39
+              },
+              "end": {
+                "line": 43,
+                "column": 44
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "infantInLap",
+            "range": [
+              1543,
+              1554
+            ],
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 46
+              },
+              "end": {
+                "line": 43,
+                "column": 57
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "infantInSeat",
+            "range": [
+              1556,
+              1568
+            ],
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 59
+              },
+              "end": {
+                "line": 43,
+                "column": 71
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "senior",
+            "range": [
+              1570,
+              1576
+            ],
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 73
+              },
+              "end": {
+                "line": 43,
+                "column": 79
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "PassengerCount",
+                  "range": [
+                    1593,
+                    1607
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 44,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 44,
+                      "column": 28
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "adult",
+                    "range": [
+                      1608,
+                      1613
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 44,
+                        "column": 29
+                      },
+                      "end": {
+                        "line": 44,
+                        "column": 34
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "child",
+                    "range": [
+                      1615,
+                      1620
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 44,
+                        "column": 36
+                      },
+                      "end": {
+                        "line": 44,
+                        "column": 41
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "infantInLap",
+                    "range": [
+                      1622,
+                      1633
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 44,
+                        "column": 43
+                      },
+                      "end": {
+                        "line": 44,
+                        "column": 54
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "infantInSeat",
+                    "range": [
+                      1635,
+                      1647
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 44,
+                        "column": 56
+                      },
+                      "end": {
+                        "line": 44,
+                        "column": 68
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "senior",
+                    "range": [
+                      1649,
+                      1655
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 44,
+                        "column": 70
+                      },
+                      "end": {
+                        "line": 44,
+                        "column": 76
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  1589,
+                  1656
+                ],
+                "loc": {
+                  "start": {
+                    "line": 44,
+                    "column": 10
+                  },
+                  "end": {
+                    "line": 44,
+                    "column": 77
+                  }
+                }
+              },
+              "range": [
+                1581,
+                1658
+              ],
+              "loc": {
+                "start": {
+                  "line": 44,
+                  "column": 2
+                },
+                "end": {
+                  "line": 45,
+                  "column": 0
+                }
+              }
+            }
+          ],
+          "range": [
+            1577,
+            1659
+          ],
+          "loc": {
+            "start": {
+              "line": 43,
+              "column": 80
+            },
+            "end": {
+              "line": 45,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          1504,
+          1659
+        ],
+        "loc": {
+          "start": {
+            "line": 43,
+            "column": 7
+          },
+          "end": {
+            "line": 45,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.passengerCounts returns a new instance of PassengerCount class.\n * @typedef {Object} dataObjects.passengerCounts\n * @property {number} adult - Count of adult passengers\n * @property {number} child - Count of child passengers\n * @property {number} infantInLap - Count of infant in lap passengers\n * @property {number} infantInSeat - Count of infant in seat passengers\n * @property {number} senior - Count of senior passengers\n ",
+            "range": [
+              1048,
+              1495
+            ],
+            "loc": {
+              "start": {
+                "line": 33,
+                "column": 0
+              },
+              "end": {
+                "line": 41,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*@typedef {Object} dataObjects.data\n ",
+            "range": [
+              1661,
+              1702
+            ],
+            "loc": {
+              "start": {
+                "line": 47,
+                "column": 0
+              },
+              "end": {
+                "line": 48,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        1497,
+        1659
+      ],
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 0
+        },
+        "end": {
+          "line": 45,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.passengerCounts returns a new instance of PassengerCount class.\n * @typedef {Object} dataObjects.passengerCounts\n * @property {number} adult - Count of adult passengers\n * @property {number} child - Count of child passengers\n * @property {number} infantInLap - Count of infant in lap passengers\n * @property {number} infantInSeat - Count of infant in seat passengers\n * @property {number} senior - Count of senior passengers\n ",
+          "range": [
+            1048,
+            1495
+          ],
+          "loc": {
+            "start": {
+              "line": 33,
+              "column": 0
+            },
+            "end": {
+              "line": 41,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*@typedef {Object} dataObjects.data\n ",
+          "range": [
+            1661,
+            1702
+          ],
+          "loc": {
+            "start": {
+              "line": 47,
+              "column": 0
+            },
+            "end": {
+              "line": 48,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "data",
+          "range": [
+            1720,
+            1724
+          ],
+          "loc": {
+            "start": {
+              "line": 50,
+              "column": 16
+            },
+            "end": {
+              "line": 50,
+              "column": 20
+            }
+          }
+        },
+        "params": [],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "Identifier",
+                "name": "data",
+                "range": [
+                  1737,
+                  1741
+                ],
+                "loc": {
+                  "start": {
+                    "line": 51,
+                    "column": 9
+                  },
+                  "end": {
+                    "line": 51,
+                    "column": 13
+                  }
+                }
+              },
+              "range": [
+                1730,
+                1742
+              ],
+              "loc": {
+                "start": {
+                  "line": 51,
+                  "column": 2
+                },
+                "end": {
+                  "line": 52,
+                  "column": 0
+                }
+              }
+            }
+          ],
+          "range": [
+            1726,
+            1743
+          ],
+          "loc": {
+            "start": {
+              "line": 50,
+              "column": 22
+            },
+            "end": {
+              "line": 52,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          1711,
+          1743
+        ],
+        "loc": {
+          "start": {
+            "line": 50,
+            "column": 7
+          },
+          "end": {
+            "line": 52,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*@typedef {Object} dataObjects.data\n ",
+            "range": [
+              1661,
+              1702
+            ],
+            "loc": {
+              "start": {
+                "line": 47,
+                "column": 0
+              },
+              "end": {
+                "line": 48,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.date returns a new instance of Date class.\n * @typedef {Object} dataObjects.date\n * @property {string} year - Year of booking\n * @property {string} month - Month of booking\n * @property {string} day - Date of booking\n ",
+            "range": [
+              1745,
+              1984
+            ],
+            "loc": {
+              "start": {
+                "line": 54,
+                "column": 0
+              },
+              "end": {
+                "line": 60,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        1704,
+        1743
+      ],
+      "loc": {
+        "start": {
+          "line": 50,
+          "column": 0
+        },
+        "end": {
+          "line": 52,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*@typedef {Object} dataObjects.data\n ",
+          "range": [
+            1661,
+            1702
+          ],
+          "loc": {
+            "start": {
+              "line": 47,
+              "column": 0
+            },
+            "end": {
+              "line": 48,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.date returns a new instance of Date class.\n * @typedef {Object} dataObjects.date\n * @property {string} year - Year of booking\n * @property {string} month - Month of booking\n * @property {string} day - Date of booking\n ",
+          "range": [
+            1745,
+            1984
+          ],
+          "loc": {
+            "start": {
+              "line": 54,
+              "column": 0
+            },
+            "end": {
+              "line": 60,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "date",
+          "range": [
+            2002,
+            2006
+          ],
+          "loc": {
+            "start": {
+              "line": 62,
+              "column": 16
+            },
+            "end": {
+              "line": 62,
+              "column": 20
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "year",
+            "range": [
+              2007,
+              2011
+            ],
+            "loc": {
+              "start": {
+                "line": 62,
+                "column": 21
+              },
+              "end": {
+                "line": 62,
+                "column": 25
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "month",
+            "range": [
+              2013,
+              2018
+            ],
+            "loc": {
+              "start": {
+                "line": 62,
+                "column": 27
+              },
+              "end": {
+                "line": 62,
+                "column": 32
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "day",
+            "range": [
+              2020,
+              2023
+            ],
+            "loc": {
+              "start": {
+                "line": 62,
+                "column": 34
+              },
+              "end": {
+                "line": 62,
+                "column": 37
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "Date",
+                  "range": [
+                    2040,
+                    2044
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 63,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 63,
+                      "column": 18
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "year",
+                    "range": [
+                      2045,
+                      2049
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 63,
+                        "column": 19
+                      },
+                      "end": {
+                        "line": 63,
+                        "column": 23
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "month",
+                    "range": [
+                      2051,
+                      2056
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 63,
+                        "column": 25
+                      },
+                      "end": {
+                        "line": 63,
+                        "column": 30
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "day",
+                    "range": [
+                      2058,
+                      2061
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 63,
+                        "column": 32
+                      },
+                      "end": {
+                        "line": 63,
+                        "column": 35
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  2036,
+                  2062
+                ],
+                "loc": {
+                  "start": {
+                    "line": 63,
+                    "column": 10
+                  },
+                  "end": {
+                    "line": 63,
+                    "column": 36
+                  }
+                }
+              },
+              "range": [
+                2028,
+                2064
+              ],
+              "loc": {
+                "start": {
+                  "line": 63,
+                  "column": 2
+                },
+                "end": {
+                  "line": 63,
+                  "column": 38
+                }
+              }
+            }
+          ],
+          "range": [
+            2024,
+            2066
+          ],
+          "loc": {
+            "start": {
+              "line": 62,
+              "column": 38
+            },
+            "end": {
+              "line": 64,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          1993,
+          2066
+        ],
+        "loc": {
+          "start": {
+            "line": 62,
+            "column": 7
+          },
+          "end": {
+            "line": 64,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.date returns a new instance of Date class.\n * @typedef {Object} dataObjects.date\n * @property {string} year - Year of booking\n * @property {string} month - Month of booking\n * @property {string} day - Date of booking\n ",
+            "range": [
+              1745,
+              1984
+            ],
+            "loc": {
+              "start": {
+                "line": 54,
+                "column": 0
+              },
+              "end": {
+                "line": 60,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.leg returns a new instance of Leg class.\n * @typedef {Object} dataObjects.leg\n * @property {string} aircraft - Aircraft is flying between an origin and destination.\n * @property {string} arrival - Flight arrival date in Jodatime format\n * @property {string} departure - Flight departure date in Jodatime format\n * @property {string} origin - Source origin of the flight\n * @property {string} destination - Flight Destination\n * @property {string} operatingDisclosure - Department of Transportation disclosure information on the actual operator of a flight in a code share.\n * @property {boolean} changePlane - Whether the passenger(s) have to change planes following this leg. Only applies to the next leg.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to leg\n ",
+            "range": [
+              2068,
+              2888
+            ],
+            "loc": {
+              "start": {
+                "line": 66,
+                "column": 0
+              },
+              "end": {
+                "line": 77,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        1986,
+        2066
+      ],
+      "loc": {
+        "start": {
+          "line": 62,
+          "column": 0
+        },
+        "end": {
+          "line": 64,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.date returns a new instance of Date class.\n * @typedef {Object} dataObjects.date\n * @property {string} year - Year of booking\n * @property {string} month - Month of booking\n * @property {string} day - Date of booking\n ",
+          "range": [
+            1745,
+            1984
+          ],
+          "loc": {
+            "start": {
+              "line": 54,
+              "column": 0
+            },
+            "end": {
+              "line": 60,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.leg returns a new instance of Leg class.\n * @typedef {Object} dataObjects.leg\n * @property {string} aircraft - Aircraft is flying between an origin and destination.\n * @property {string} arrival - Flight arrival date in Jodatime format\n * @property {string} departure - Flight departure date in Jodatime format\n * @property {string} origin - Source origin of the flight\n * @property {string} destination - Flight Destination\n * @property {string} operatingDisclosure - Department of Transportation disclosure information on the actual operator of a flight in a code share.\n * @property {boolean} changePlane - Whether the passenger(s) have to change planes following this leg. Only applies to the next leg.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to leg\n ",
+          "range": [
+            2068,
+            2888
+          ],
+          "loc": {
+            "start": {
+              "line": 66,
+              "column": 0
+            },
+            "end": {
+              "line": 77,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "leg",
+          "range": [
+            2906,
+            2909
+          ],
+          "loc": {
+            "start": {
+              "line": 79,
+              "column": 16
+            },
+            "end": {
+              "line": 79,
+              "column": 19
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "aircraft",
+            "range": [
+              2910,
+              2918
+            ],
+            "loc": {
+              "start": {
+                "line": 79,
+                "column": 20
+              },
+              "end": {
+                "line": 79,
+                "column": 28
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "arrival",
+            "range": [
+              2920,
+              2927
+            ],
+            "loc": {
+              "start": {
+                "line": 79,
+                "column": 30
+              },
+              "end": {
+                "line": 79,
+                "column": 37
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "departure",
+            "range": [
+              2929,
+              2938
+            ],
+            "loc": {
+              "start": {
+                "line": 79,
+                "column": 39
+              },
+              "end": {
+                "line": 79,
+                "column": 48
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "origin",
+            "range": [
+              2940,
+              2946
+            ],
+            "loc": {
+              "start": {
+                "line": 79,
+                "column": 50
+              },
+              "end": {
+                "line": 79,
+                "column": 56
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "destination",
+            "range": [
+              2948,
+              2959
+            ],
+            "loc": {
+              "start": {
+                "line": 79,
+                "column": 58
+              },
+              "end": {
+                "line": 79,
+                "column": 69
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "operatingDisclosure",
+            "range": [
+              2961,
+              2980
+            ],
+            "loc": {
+              "start": {
+                "line": 79,
+                "column": 71
+              },
+              "end": {
+                "line": 79,
+                "column": 90
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "changePlane",
+            "range": [
+              2982,
+              2993
+            ],
+            "loc": {
+              "start": {
+                "line": 79,
+                "column": 92
+              },
+              "end": {
+                "line": 79,
+                "column": 103
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "data",
+            "range": [
+              2995,
+              2999
+            ],
+            "loc": {
+              "start": {
+                "line": 79,
+                "column": 105
+              },
+              "end": {
+                "line": 79,
+                "column": 109
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "Leg",
+                  "range": [
+                    3016,
+                    3019
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 80,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 80,
+                      "column": 17
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "aircraft",
+                    "range": [
+                      3020,
+                      3028
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 80,
+                        "column": 18
+                      },
+                      "end": {
+                        "line": 80,
+                        "column": 26
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "arrival",
+                    "range": [
+                      3030,
+                      3037
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 80,
+                        "column": 28
+                      },
+                      "end": {
+                        "line": 80,
+                        "column": 35
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "departure",
+                    "range": [
+                      3039,
+                      3048
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 80,
+                        "column": 37
+                      },
+                      "end": {
+                        "line": 80,
+                        "column": 46
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "origin",
+                    "range": [
+                      3050,
+                      3056
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 80,
+                        "column": 48
+                      },
+                      "end": {
+                        "line": 80,
+                        "column": 54
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "destination",
+                    "range": [
+                      3058,
+                      3069
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 80,
+                        "column": 56
+                      },
+                      "end": {
+                        "line": 80,
+                        "column": 67
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "operatingDisclosure",
+                    "range": [
+                      3071,
+                      3090
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 80,
+                        "column": 69
+                      },
+                      "end": {
+                        "line": 80,
+                        "column": 88
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "changePlane",
+                    "range": [
+                      3092,
+                      3103
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 80,
+                        "column": 90
+                      },
+                      "end": {
+                        "line": 80,
+                        "column": 101
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "data",
+                    "range": [
+                      3105,
+                      3109
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 80,
+                        "column": 103
+                      },
+                      "end": {
+                        "line": 80,
+                        "column": 107
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  3012,
+                  3110
+                ],
+                "loc": {
+                  "start": {
+                    "line": 80,
+                    "column": 10
+                  },
+                  "end": {
+                    "line": 80,
+                    "column": 108
+                  }
+                }
+              },
+              "range": [
+                3004,
+                3112
+              ],
+              "loc": {
+                "start": {
+                  "line": 80,
+                  "column": 2
+                },
+                "end": {
+                  "line": 80,
+                  "column": 110
+                }
+              }
+            }
+          ],
+          "range": [
+            3000,
+            3114
+          ],
+          "loc": {
+            "start": {
+              "line": 79,
+              "column": 110
+            },
+            "end": {
+              "line": 81,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          2897,
+          3114
+        ],
+        "loc": {
+          "start": {
+            "line": 79,
+            "column": 7
+          },
+          "end": {
+            "line": 81,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.leg returns a new instance of Leg class.\n * @typedef {Object} dataObjects.leg\n * @property {string} aircraft - Aircraft is flying between an origin and destination.\n * @property {string} arrival - Flight arrival date in Jodatime format\n * @property {string} departure - Flight departure date in Jodatime format\n * @property {string} origin - Source origin of the flight\n * @property {string} destination - Flight Destination\n * @property {string} operatingDisclosure - Department of Transportation disclosure information on the actual operator of a flight in a code share.\n * @property {boolean} changePlane - Whether the passenger(s) have to change planes following this leg. Only applies to the next leg.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to leg\n ",
+            "range": [
+              2068,
+              2888
+            ],
+            "loc": {
+              "start": {
+                "line": 66,
+                "column": 0
+              },
+              "end": {
+                "line": 77,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.segment returns a new instance of Segment class.\n * @typedef {Object} dataObjects.segment\n * @property {number} duration - Flight duration\n * @property {object} flight - Flight object having flight details\n * @property {string} cabin - Booked Cabin in the Flight\n * @property {string} bookingCode - The booking code or class for this segment.\n * @property {number} bookingCodeCount - The number of seats available in this booking code on this segment.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to segment\n * @property {object[]} leg - Leg object comprising of the details about the hop taken by a flight.Segment can have multiple legs\n ",
+            "range": [
+              3116,
+              3815
+            ],
+            "loc": {
+              "start": {
+                "line": 83,
+                "column": 0
+              },
+              "end": {
+                "line": 93,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        2890,
+        3114
+      ],
+      "loc": {
+        "start": {
+          "line": 79,
+          "column": 0
+        },
+        "end": {
+          "line": 81,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.leg returns a new instance of Leg class.\n * @typedef {Object} dataObjects.leg\n * @property {string} aircraft - Aircraft is flying between an origin and destination.\n * @property {string} arrival - Flight arrival date in Jodatime format\n * @property {string} departure - Flight departure date in Jodatime format\n * @property {string} origin - Source origin of the flight\n * @property {string} destination - Flight Destination\n * @property {string} operatingDisclosure - Department of Transportation disclosure information on the actual operator of a flight in a code share.\n * @property {boolean} changePlane - Whether the passenger(s) have to change planes following this leg. Only applies to the next leg.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to leg\n ",
+          "range": [
+            2068,
+            2888
+          ],
+          "loc": {
+            "start": {
+              "line": 66,
+              "column": 0
+            },
+            "end": {
+              "line": 77,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.segment returns a new instance of Segment class.\n * @typedef {Object} dataObjects.segment\n * @property {number} duration - Flight duration\n * @property {object} flight - Flight object having flight details\n * @property {string} cabin - Booked Cabin in the Flight\n * @property {string} bookingCode - The booking code or class for this segment.\n * @property {number} bookingCodeCount - The number of seats available in this booking code on this segment.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to segment\n * @property {object[]} leg - Leg object comprising of the details about the hop taken by a flight.Segment can have multiple legs\n ",
+          "range": [
+            3116,
+            3815
+          ],
+          "loc": {
+            "start": {
+              "line": 83,
+              "column": 0
+            },
+            "end": {
+              "line": 93,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "segment",
+          "range": [
+            3833,
+            3840
+          ],
+          "loc": {
+            "start": {
+              "line": 95,
+              "column": 16
+            },
+            "end": {
+              "line": 95,
+              "column": 23
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "duration",
+            "range": [
+              3841,
+              3849
+            ],
+            "loc": {
+              "start": {
+                "line": 95,
+                "column": 24
+              },
+              "end": {
+                "line": 95,
+                "column": 32
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "flight",
+            "range": [
+              3851,
+              3857
+            ],
+            "loc": {
+              "start": {
+                "line": 95,
+                "column": 34
+              },
+              "end": {
+                "line": 95,
+                "column": 40
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "cabin",
+            "range": [
+              3859,
+              3864
+            ],
+            "loc": {
+              "start": {
+                "line": 95,
+                "column": 42
+              },
+              "end": {
+                "line": 95,
+                "column": 47
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "bookingCode",
+            "range": [
+              3866,
+              3877
+            ],
+            "loc": {
+              "start": {
+                "line": 95,
+                "column": 49
+              },
+              "end": {
+                "line": 95,
+                "column": 60
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "bookingCodeCount",
+            "range": [
+              3879,
+              3895
+            ],
+            "loc": {
+              "start": {
+                "line": 95,
+                "column": 62
+              },
+              "end": {
+                "line": 95,
+                "column": 78
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "data",
+            "range": [
+              3897,
+              3901
+            ],
+            "loc": {
+              "start": {
+                "line": 95,
+                "column": 80
+              },
+              "end": {
+                "line": 95,
+                "column": 84
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "leg",
+            "range": [
+              3903,
+              3906
+            ],
+            "loc": {
+              "start": {
+                "line": 95,
+                "column": 86
+              },
+              "end": {
+                "line": 95,
+                "column": 89
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "Segment",
+                  "range": [
+                    3923,
+                    3930
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 96,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 96,
+                      "column": 21
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "duration",
+                    "range": [
+                      3931,
+                      3939
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 96,
+                        "column": 22
+                      },
+                      "end": {
+                        "line": 96,
+                        "column": 30
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "flight",
+                    "range": [
+                      3941,
+                      3947
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 96,
+                        "column": 32
+                      },
+                      "end": {
+                        "line": 96,
+                        "column": 38
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "cabin",
+                    "range": [
+                      3949,
+                      3954
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 96,
+                        "column": 40
+                      },
+                      "end": {
+                        "line": 96,
+                        "column": 45
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "bookingCode",
+                    "range": [
+                      3956,
+                      3967
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 96,
+                        "column": 47
+                      },
+                      "end": {
+                        "line": 96,
+                        "column": 58
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "bookingCodeCount",
+                    "range": [
+                      3969,
+                      3985
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 96,
+                        "column": 60
+                      },
+                      "end": {
+                        "line": 96,
+                        "column": 76
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "data",
+                    "range": [
+                      3987,
+                      3991
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 96,
+                        "column": 78
+                      },
+                      "end": {
+                        "line": 96,
+                        "column": 82
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "leg",
+                    "range": [
+                      3993,
+                      3996
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 96,
+                        "column": 84
+                      },
+                      "end": {
+                        "line": 96,
+                        "column": 87
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  3919,
+                  3997
+                ],
+                "loc": {
+                  "start": {
+                    "line": 96,
+                    "column": 10
+                  },
+                  "end": {
+                    "line": 96,
+                    "column": 88
+                  }
+                }
+              },
+              "range": [
+                3911,
+                3999
+              ],
+              "loc": {
+                "start": {
+                  "line": 96,
+                  "column": 2
+                },
+                "end": {
+                  "line": 96,
+                  "column": 90
+                }
+              }
+            }
+          ],
+          "range": [
+            3907,
+            4001
+          ],
+          "loc": {
+            "start": {
+              "line": 95,
+              "column": 90
+            },
+            "end": {
+              "line": 97,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          3824,
+          4001
+        ],
+        "loc": {
+          "start": {
+            "line": 95,
+            "column": 7
+          },
+          "end": {
+            "line": 97,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.segment returns a new instance of Segment class.\n * @typedef {Object} dataObjects.segment\n * @property {number} duration - Flight duration\n * @property {object} flight - Flight object having flight details\n * @property {string} cabin - Booked Cabin in the Flight\n * @property {string} bookingCode - The booking code or class for this segment.\n * @property {number} bookingCodeCount - The number of seats available in this booking code on this segment.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to segment\n * @property {object[]} leg - Leg object comprising of the details about the hop taken by a flight.Segment can have multiple legs\n ",
+            "range": [
+              3116,
+              3815
+            ],
+            "loc": {
+              "start": {
+                "line": 83,
+                "column": 0
+              },
+              "end": {
+                "line": 93,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.slice returns a new instance of Slice class.\n * @typedef {Object} dataObjects.slice\n * @property {number} duration - Flight duration (to reach from source to the destination)\n * @property {object[]} segment - Segment object having flight data. Slice can have multiple segments\n ",
+            "range": [
+              4003,
+              4302
+            ],
+            "loc": {
+              "start": {
+                "line": 99,
+                "column": 0
+              },
+              "end": {
+                "line": 104,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        3817,
+        4001
+      ],
+      "loc": {
+        "start": {
+          "line": 95,
+          "column": 0
+        },
+        "end": {
+          "line": 97,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.segment returns a new instance of Segment class.\n * @typedef {Object} dataObjects.segment\n * @property {number} duration - Flight duration\n * @property {object} flight - Flight object having flight details\n * @property {string} cabin - Booked Cabin in the Flight\n * @property {string} bookingCode - The booking code or class for this segment.\n * @property {number} bookingCodeCount - The number of seats available in this booking code on this segment.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to segment\n * @property {object[]} leg - Leg object comprising of the details about the hop taken by a flight.Segment can have multiple legs\n ",
+          "range": [
+            3116,
+            3815
+          ],
+          "loc": {
+            "start": {
+              "line": 83,
+              "column": 0
+            },
+            "end": {
+              "line": 93,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.slice returns a new instance of Slice class.\n * @typedef {Object} dataObjects.slice\n * @property {number} duration - Flight duration (to reach from source to the destination)\n * @property {object[]} segment - Segment object having flight data. Slice can have multiple segments\n ",
+          "range": [
+            4003,
+            4302
+          ],
+          "loc": {
+            "start": {
+              "line": 99,
+              "column": 0
+            },
+            "end": {
+              "line": 104,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "slice",
+          "range": [
+            4320,
+            4325
+          ],
+          "loc": {
+            "start": {
+              "line": 106,
+              "column": 16
+            },
+            "end": {
+              "line": 106,
+              "column": 21
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "duration",
+            "range": [
+              4326,
+              4334
+            ],
+            "loc": {
+              "start": {
+                "line": 106,
+                "column": 22
+              },
+              "end": {
+                "line": 106,
+                "column": 30
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "segment",
+            "range": [
+              4336,
+              4343
+            ],
+            "loc": {
+              "start": {
+                "line": 106,
+                "column": 32
+              },
+              "end": {
+                "line": 106,
+                "column": 39
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "Slice",
+                  "range": [
+                    4360,
+                    4365
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 107,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 107,
+                      "column": 19
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "duration",
+                    "range": [
+                      4366,
+                      4374
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 107,
+                        "column": 20
+                      },
+                      "end": {
+                        "line": 107,
+                        "column": 28
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "segment",
+                    "range": [
+                      4376,
+                      4383
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 107,
+                        "column": 30
+                      },
+                      "end": {
+                        "line": 107,
+                        "column": 37
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  4356,
+                  4384
+                ],
+                "loc": {
+                  "start": {
+                    "line": 107,
+                    "column": 10
+                  },
+                  "end": {
+                    "line": 107,
+                    "column": 38
+                  }
+                }
+              },
+              "range": [
+                4348,
+                4386
+              ],
+              "loc": {
+                "start": {
+                  "line": 107,
+                  "column": 2
+                },
+                "end": {
+                  "line": 107,
+                  "column": 40
+                }
+              }
+            }
+          ],
+          "range": [
+            4344,
+            4388
+          ],
+          "loc": {
+            "start": {
+              "line": 106,
+              "column": 40
+            },
+            "end": {
+              "line": 108,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          4311,
+          4388
+        ],
+        "loc": {
+          "start": {
+            "line": 106,
+            "column": 7
+          },
+          "end": {
+            "line": 108,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.slice returns a new instance of Slice class.\n * @typedef {Object} dataObjects.slice\n * @property {number} duration - Flight duration (to reach from source to the destination)\n * @property {object[]} segment - Segment object having flight data. Slice can have multiple segments\n ",
+            "range": [
+              4003,
+              4302
+            ],
+            "loc": {
+              "start": {
+                "line": 99,
+                "column": 0
+              },
+              "end": {
+                "line": 104,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.trip returns a new instance of Trip class.\n * @typedef {Object} dataObjects.trip\n * @property {boolean} missedConnections - -\n * @property {object} passengerCounts - Passenger count object having the total count of travelling passengers.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to trip.\n * @property {object[]} slices - Slice object having trip info. Trip can have multiple slices.\n ",
+            "range": [
+              4390,
+              4838
+            ],
+            "loc": {
+              "start": {
+                "line": 110,
+                "column": 0
+              },
+              "end": {
+                "line": 117,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        4304,
+        4388
+      ],
+      "loc": {
+        "start": {
+          "line": 106,
+          "column": 0
+        },
+        "end": {
+          "line": 108,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.slice returns a new instance of Slice class.\n * @typedef {Object} dataObjects.slice\n * @property {number} duration - Flight duration (to reach from source to the destination)\n * @property {object[]} segment - Segment object having flight data. Slice can have multiple segments\n ",
+          "range": [
+            4003,
+            4302
+          ],
+          "loc": {
+            "start": {
+              "line": 99,
+              "column": 0
+            },
+            "end": {
+              "line": 104,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.trip returns a new instance of Trip class.\n * @typedef {Object} dataObjects.trip\n * @property {boolean} missedConnections - -\n * @property {object} passengerCounts - Passenger count object having the total count of travelling passengers.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to trip.\n * @property {object[]} slices - Slice object having trip info. Trip can have multiple slices.\n ",
+          "range": [
+            4390,
+            4838
+          ],
+          "loc": {
+            "start": {
+              "line": 110,
+              "column": 0
+            },
+            "end": {
+              "line": 117,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "trip",
+          "range": [
+            4855,
+            4859
+          ],
+          "loc": {
+            "start": {
+              "line": 118,
+              "column": 16
+            },
+            "end": {
+              "line": 118,
+              "column": 20
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "missedConnections",
+            "range": [
+              4860,
+              4877
+            ],
+            "loc": {
+              "start": {
+                "line": 118,
+                "column": 21
+              },
+              "end": {
+                "line": 118,
+                "column": 38
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "passengerCounts",
+            "range": [
+              4879,
+              4894
+            ],
+            "loc": {
+              "start": {
+                "line": 118,
+                "column": 40
+              },
+              "end": {
+                "line": 118,
+                "column": 55
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "data",
+            "range": [
+              4896,
+              4900
+            ],
+            "loc": {
+              "start": {
+                "line": 118,
+                "column": 57
+              },
+              "end": {
+                "line": 118,
+                "column": 61
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "slices",
+            "range": [
+              4902,
+              4908
+            ],
+            "loc": {
+              "start": {
+                "line": 118,
+                "column": 63
+              },
+              "end": {
+                "line": 118,
+                "column": 69
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "Trip",
+                  "range": [
+                    4925,
+                    4929
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 119,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 119,
+                      "column": 18
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "missedConnections",
+                    "range": [
+                      4930,
+                      4947
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 119,
+                        "column": 19
+                      },
+                      "end": {
+                        "line": 119,
+                        "column": 36
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "passengerCounts",
+                    "range": [
+                      4949,
+                      4964
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 119,
+                        "column": 38
+                      },
+                      "end": {
+                        "line": 119,
+                        "column": 53
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "data",
+                    "range": [
+                      4966,
+                      4970
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 119,
+                        "column": 55
+                      },
+                      "end": {
+                        "line": 119,
+                        "column": 59
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "slices",
+                    "range": [
+                      4972,
+                      4978
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 119,
+                        "column": 61
+                      },
+                      "end": {
+                        "line": 119,
+                        "column": 67
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  4921,
+                  4979
+                ],
+                "loc": {
+                  "start": {
+                    "line": 119,
+                    "column": 10
+                  },
+                  "end": {
+                    "line": 119,
+                    "column": 68
+                  }
+                }
+              },
+              "range": [
+                4913,
+                4981
+              ],
+              "loc": {
+                "start": {
+                  "line": 119,
+                  "column": 2
+                },
+                "end": {
+                  "line": 119,
+                  "column": 70
+                }
+              }
+            }
+          ],
+          "range": [
+            4909,
+            4983
+          ],
+          "loc": {
+            "start": {
+              "line": 118,
+              "column": 70
+            },
+            "end": {
+              "line": 120,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          4846,
+          4983
+        ],
+        "loc": {
+          "start": {
+            "line": 118,
+            "column": 7
+          },
+          "end": {
+            "line": 120,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.trip returns a new instance of Trip class.\n * @typedef {Object} dataObjects.trip\n * @property {boolean} missedConnections - -\n * @property {object} passengerCounts - Passenger count object having the total count of travelling passengers.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to trip.\n * @property {object[]} slices - Slice object having trip info. Trip can have multiple slices.\n ",
+            "range": [
+              4390,
+              4838
+            ],
+            "loc": {
+              "start": {
+                "line": 110,
+                "column": 0
+              },
+              "end": {
+                "line": 117,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.dateOfBirth returns a new instance of DateOfBirth class.\n * @typedef {Object} dataObjects.dateOfBirth\n * @property {string} year - Birth year of the passenger\n * @property {string} month - Birth month of the passenger\n * @property {string} day - Birth date of the passenger\n ",
+            "range": [
+              4985,
+              5281
+            ],
+            "loc": {
+              "start": {
+                "line": 122,
+                "column": 0
+              },
+              "end": {
+                "line": 128,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        4839,
+        4983
+      ],
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 0
+        },
+        "end": {
+          "line": 120,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.trip returns a new instance of Trip class.\n * @typedef {Object} dataObjects.trip\n * @property {boolean} missedConnections - -\n * @property {object} passengerCounts - Passenger count object having the total count of travelling passengers.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to trip.\n * @property {object[]} slices - Slice object having trip info. Trip can have multiple slices.\n ",
+          "range": [
+            4390,
+            4838
+          ],
+          "loc": {
+            "start": {
+              "line": 110,
+              "column": 0
+            },
+            "end": {
+              "line": 117,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.dateOfBirth returns a new instance of DateOfBirth class.\n * @typedef {Object} dataObjects.dateOfBirth\n * @property {string} year - Birth year of the passenger\n * @property {string} month - Birth month of the passenger\n * @property {string} day - Birth date of the passenger\n ",
+          "range": [
+            4985,
+            5281
+          ],
+          "loc": {
+            "start": {
+              "line": 122,
+              "column": 0
+            },
+            "end": {
+              "line": 128,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "dateOfBirth",
+          "range": [
+            5298,
+            5309
+          ],
+          "loc": {
+            "start": {
+              "line": 129,
+              "column": 16
+            },
+            "end": {
+              "line": 129,
+              "column": 27
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "year",
+            "range": [
+              5310,
+              5314
+            ],
+            "loc": {
+              "start": {
+                "line": 129,
+                "column": 28
+              },
+              "end": {
+                "line": 129,
+                "column": 32
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "month",
+            "range": [
+              5316,
+              5321
+            ],
+            "loc": {
+              "start": {
+                "line": 129,
+                "column": 34
+              },
+              "end": {
+                "line": 129,
+                "column": 39
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "day",
+            "range": [
+              5323,
+              5326
+            ],
+            "loc": {
+              "start": {
+                "line": 129,
+                "column": 41
+              },
+              "end": {
+                "line": 129,
+                "column": 44
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "DateOfBirth",
+                  "range": [
+                    5343,
+                    5354
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 130,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 130,
+                      "column": 25
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "year",
+                    "range": [
+                      5355,
+                      5359
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 130,
+                        "column": 26
+                      },
+                      "end": {
+                        "line": 130,
+                        "column": 30
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "month",
+                    "range": [
+                      5361,
+                      5366
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 130,
+                        "column": 32
+                      },
+                      "end": {
+                        "line": 130,
+                        "column": 37
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "day",
+                    "range": [
+                      5368,
+                      5371
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 130,
+                        "column": 39
+                      },
+                      "end": {
+                        "line": 130,
+                        "column": 42
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  5339,
+                  5372
+                ],
+                "loc": {
+                  "start": {
+                    "line": 130,
+                    "column": 10
+                  },
+                  "end": {
+                    "line": 130,
+                    "column": 43
+                  }
+                }
+              },
+              "range": [
+                5331,
+                5374
+              ],
+              "loc": {
+                "start": {
+                  "line": 130,
+                  "column": 2
+                },
+                "end": {
+                  "line": 130,
+                  "column": 45
+                }
+              }
+            }
+          ],
+          "range": [
+            5327,
+            5376
+          ],
+          "loc": {
+            "start": {
+              "line": 129,
+              "column": 45
+            },
+            "end": {
+              "line": 131,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          5289,
+          5376
+        ],
+        "loc": {
+          "start": {
+            "line": 129,
+            "column": 7
+          },
+          "end": {
+            "line": 131,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.dateOfBirth returns a new instance of DateOfBirth class.\n * @typedef {Object} dataObjects.dateOfBirth\n * @property {string} year - Birth year of the passenger\n * @property {string} month - Birth month of the passenger\n * @property {string} day - Birth date of the passenger\n ",
+            "range": [
+              4985,
+              5281
+            ],
+            "loc": {
+              "start": {
+                "line": 122,
+                "column": 0
+              },
+              "end": {
+                "line": 128,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.personInfo returns a new instance of PersonInfo class.\n * @typedef {Object} dataObjects.personInfo\n * @property {string} gender - Gender of the passenger\n * @property {string} firstName - First name of the passenger\n * @property {string} lastName - Last name of the passenger\n * @property {string} middleName - Middle name of the passenger\n * @property {object} dateOfBirth - Date Of Birth of the passenger\n * @property {string} phone - Phone number of the passenger\n * @property {string} email - Email of the passenger\n * @property {boolean} isDeciderToPay - Is he the decider to pay?\n * @property {boolean} isPayer - Is he the Payer?\n * @property {boolean} isPassenger - Is he the passenger himself?\n * @property {boolean} isBookingPerson - Is he the booking person?\n ",
+            "range": [
+              5378,
+              6169
+            ],
+            "loc": {
+              "start": {
+                "line": 133,
+                "column": 0
+              },
+              "end": {
+                "line": 147,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        5282,
+        5376
+      ],
+      "loc": {
+        "start": {
+          "line": 129,
+          "column": 0
+        },
+        "end": {
+          "line": 131,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.dateOfBirth returns a new instance of DateOfBirth class.\n * @typedef {Object} dataObjects.dateOfBirth\n * @property {string} year - Birth year of the passenger\n * @property {string} month - Birth month of the passenger\n * @property {string} day - Birth date of the passenger\n ",
+          "range": [
+            4985,
+            5281
+          ],
+          "loc": {
+            "start": {
+              "line": 122,
+              "column": 0
+            },
+            "end": {
+              "line": 128,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.personInfo returns a new instance of PersonInfo class.\n * @typedef {Object} dataObjects.personInfo\n * @property {string} gender - Gender of the passenger\n * @property {string} firstName - First name of the passenger\n * @property {string} lastName - Last name of the passenger\n * @property {string} middleName - Middle name of the passenger\n * @property {object} dateOfBirth - Date Of Birth of the passenger\n * @property {string} phone - Phone number of the passenger\n * @property {string} email - Email of the passenger\n * @property {boolean} isDeciderToPay - Is he the decider to pay?\n * @property {boolean} isPayer - Is he the Payer?\n * @property {boolean} isPassenger - Is he the passenger himself?\n * @property {boolean} isBookingPerson - Is he the booking person?\n ",
+          "range": [
+            5378,
+            6169
+          ],
+          "loc": {
+            "start": {
+              "line": 133,
+              "column": 0
+            },
+            "end": {
+              "line": 147,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "personInfo",
+          "range": [
+            6186,
+            6196
+          ],
+          "loc": {
+            "start": {
+              "line": 148,
+              "column": 16
+            },
+            "end": {
+              "line": 148,
+              "column": 26
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "gender",
+            "range": [
+              6197,
+              6203
+            ],
+            "loc": {
+              "start": {
+                "line": 148,
+                "column": 27
+              },
+              "end": {
+                "line": 148,
+                "column": 33
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "firstName",
+            "range": [
+              6205,
+              6214
+            ],
+            "loc": {
+              "start": {
+                "line": 148,
+                "column": 35
+              },
+              "end": {
+                "line": 148,
+                "column": 44
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "lastName",
+            "range": [
+              6216,
+              6224
+            ],
+            "loc": {
+              "start": {
+                "line": 148,
+                "column": 46
+              },
+              "end": {
+                "line": 148,
+                "column": 54
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "middleName",
+            "range": [
+              6226,
+              6236
+            ],
+            "loc": {
+              "start": {
+                "line": 148,
+                "column": 56
+              },
+              "end": {
+                "line": 148,
+                "column": 66
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "dateOfBirth",
+            "range": [
+              6238,
+              6249
+            ],
+            "loc": {
+              "start": {
+                "line": 148,
+                "column": 68
+              },
+              "end": {
+                "line": 148,
+                "column": 79
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "phone",
+            "range": [
+              6278,
+              6283
+            ],
+            "loc": {
+              "start": {
+                "line": 149,
+                "column": 27
+              },
+              "end": {
+                "line": 149,
+                "column": 32
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "email",
+            "range": [
+              6285,
+              6290
+            ],
+            "loc": {
+              "start": {
+                "line": 149,
+                "column": 34
+              },
+              "end": {
+                "line": 149,
+                "column": 39
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "isDeciderToPay",
+            "range": [
+              6292,
+              6306
+            ],
+            "loc": {
+              "start": {
+                "line": 149,
+                "column": 41
+              },
+              "end": {
+                "line": 149,
+                "column": 55
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "isPayer",
+            "range": [
+              6308,
+              6315
+            ],
+            "loc": {
+              "start": {
+                "line": 149,
+                "column": 57
+              },
+              "end": {
+                "line": 149,
+                "column": 64
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "isPassenger",
+            "range": [
+              6317,
+              6328
+            ],
+            "loc": {
+              "start": {
+                "line": 149,
+                "column": 66
+              },
+              "end": {
+                "line": 149,
+                "column": 77
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "isBookingPerson",
+            "range": [
+              6330,
+              6345
+            ],
+            "loc": {
+              "start": {
+                "line": 149,
+                "column": 79
+              },
+              "end": {
+                "line": 149,
+                "column": 94
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "PersonDetails",
+                  "range": [
+                    6362,
+                    6375
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 150,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 150,
+                      "column": 27
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "gender",
+                    "range": [
+                      6376,
+                      6382
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 150,
+                        "column": 28
+                      },
+                      "end": {
+                        "line": 150,
+                        "column": 34
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "firstName",
+                    "range": [
+                      6384,
+                      6393
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 150,
+                        "column": 36
+                      },
+                      "end": {
+                        "line": 150,
+                        "column": 45
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "lastName",
+                    "range": [
+                      6395,
+                      6403
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 150,
+                        "column": 47
+                      },
+                      "end": {
+                        "line": 150,
+                        "column": 55
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "middleName",
+                    "range": [
+                      6405,
+                      6415
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 150,
+                        "column": 57
+                      },
+                      "end": {
+                        "line": 150,
+                        "column": 67
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "dateOfBirth",
+                    "range": [
+                      6417,
+                      6428
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 150,
+                        "column": 69
+                      },
+                      "end": {
+                        "line": 150,
+                        "column": 80
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "phone",
+                    "range": [
+                      6436,
+                      6441
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 151,
+                        "column": 6
+                      },
+                      "end": {
+                        "line": 151,
+                        "column": 11
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "email",
+                    "range": [
+                      6443,
+                      6448
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 151,
+                        "column": 13
+                      },
+                      "end": {
+                        "line": 151,
+                        "column": 18
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "isDeciderToPay",
+                    "range": [
+                      6450,
+                      6464
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 151,
+                        "column": 20
+                      },
+                      "end": {
+                        "line": 151,
+                        "column": 34
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "isPayer",
+                    "range": [
+                      6466,
+                      6473
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 151,
+                        "column": 36
+                      },
+                      "end": {
+                        "line": 151,
+                        "column": 43
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "isPassenger",
+                    "range": [
+                      6475,
+                      6486
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 151,
+                        "column": 45
+                      },
+                      "end": {
+                        "line": 151,
+                        "column": 56
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "isBookingPerson",
+                    "range": [
+                      6488,
+                      6503
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 151,
+                        "column": 58
+                      },
+                      "end": {
+                        "line": 151,
+                        "column": 73
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  6358,
+                  6504
+                ],
+                "loc": {
+                  "start": {
+                    "line": 150,
+                    "column": 10
+                  },
+                  "end": {
+                    "line": 151,
+                    "column": 74
+                  }
+                }
+              },
+              "range": [
+                6350,
+                6506
+              ],
+              "loc": {
+                "start": {
+                  "line": 150,
+                  "column": 2
+                },
+                "end": {
+                  "line": 151,
+                  "column": 76
+                }
+              }
+            }
+          ],
+          "range": [
+            6346,
+            6508
+          ],
+          "loc": {
+            "start": {
+              "line": 149,
+              "column": 95
+            },
+            "end": {
+              "line": 152,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          6177,
+          6508
+        ],
+        "loc": {
+          "start": {
+            "line": 148,
+            "column": 7
+          },
+          "end": {
+            "line": 152,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.personInfo returns a new instance of PersonInfo class.\n * @typedef {Object} dataObjects.personInfo\n * @property {string} gender - Gender of the passenger\n * @property {string} firstName - First name of the passenger\n * @property {string} lastName - Last name of the passenger\n * @property {string} middleName - Middle name of the passenger\n * @property {object} dateOfBirth - Date Of Birth of the passenger\n * @property {string} phone - Phone number of the passenger\n * @property {string} email - Email of the passenger\n * @property {boolean} isDeciderToPay - Is he the decider to pay?\n * @property {boolean} isPayer - Is he the Payer?\n * @property {boolean} isPassenger - Is he the passenger himself?\n * @property {boolean} isBookingPerson - Is he the booking person?\n ",
+            "range": [
+              5378,
+              6169
+            ],
+            "loc": {
+              "start": {
+                "line": 133,
+                "column": 0
+              },
+              "end": {
+                "line": 147,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.tripData returns a new instance of TripData class.\n * @typedef {Object} dataObjects.tripData\n * @property {string} id - Trip ID received from the Pricing API\n * @property {object} personInfo - Person details received from PersonDetails class\n\n ",
+            "range": [
+              6510,
+              6775
+            ],
+            "loc": {
+              "start": {
+                "line": 154,
+                "column": 0
+              },
+              "end": {
+                "line": 160,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        6170,
+        6508
+      ],
+      "loc": {
+        "start": {
+          "line": 148,
+          "column": 0
+        },
+        "end": {
+          "line": 152,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.personInfo returns a new instance of PersonInfo class.\n * @typedef {Object} dataObjects.personInfo\n * @property {string} gender - Gender of the passenger\n * @property {string} firstName - First name of the passenger\n * @property {string} lastName - Last name of the passenger\n * @property {string} middleName - Middle name of the passenger\n * @property {object} dateOfBirth - Date Of Birth of the passenger\n * @property {string} phone - Phone number of the passenger\n * @property {string} email - Email of the passenger\n * @property {boolean} isDeciderToPay - Is he the decider to pay?\n * @property {boolean} isPayer - Is he the Payer?\n * @property {boolean} isPassenger - Is he the passenger himself?\n * @property {boolean} isBookingPerson - Is he the booking person?\n ",
+          "range": [
+            5378,
+            6169
+          ],
+          "loc": {
+            "start": {
+              "line": 133,
+              "column": 0
+            },
+            "end": {
+              "line": 147,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.tripData returns a new instance of TripData class.\n * @typedef {Object} dataObjects.tripData\n * @property {string} id - Trip ID received from the Pricing API\n * @property {object} personInfo - Person details received from PersonDetails class\n\n ",
+          "range": [
+            6510,
+            6775
+          ],
+          "loc": {
+            "start": {
+              "line": 154,
+              "column": 0
+            },
+            "end": {
+              "line": 160,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "tripData",
+          "range": [
+            6792,
+            6800
+          ],
+          "loc": {
+            "start": {
+              "line": 161,
+              "column": 16
+            },
+            "end": {
+              "line": 161,
+              "column": 24
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "id",
+            "range": [
+              6801,
+              6803
+            ],
+            "loc": {
+              "start": {
+                "line": 161,
+                "column": 25
+              },
+              "end": {
+                "line": 161,
+                "column": 27
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "personInfo",
+            "range": [
+              6805,
+              6815
+            ],
+            "loc": {
+              "start": {
+                "line": 161,
+                "column": 29
+              },
+              "end": {
+                "line": 161,
+                "column": 39
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "TripData",
+                  "range": [
+                    6832,
+                    6840
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 162,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 162,
+                      "column": 22
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "id",
+                    "range": [
+                      6841,
+                      6843
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 162,
+                        "column": 23
+                      },
+                      "end": {
+                        "line": 162,
+                        "column": 25
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "personInfo",
+                    "range": [
+                      6845,
+                      6855
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 162,
+                        "column": 27
+                      },
+                      "end": {
+                        "line": 162,
+                        "column": 37
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  6828,
+                  6856
+                ],
+                "loc": {
+                  "start": {
+                    "line": 162,
+                    "column": 10
+                  },
+                  "end": {
+                    "line": 162,
+                    "column": 38
+                  }
+                }
+              },
+              "range": [
+                6820,
+                6858
+              ],
+              "loc": {
+                "start": {
+                  "line": 162,
+                  "column": 2
+                },
+                "end": {
+                  "line": 162,
+                  "column": 40
+                }
+              }
+            }
+          ],
+          "range": [
+            6816,
+            6860
+          ],
+          "loc": {
+            "start": {
+              "line": 161,
+              "column": 40
+            },
+            "end": {
+              "line": 163,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          6783,
+          6860
+        ],
+        "loc": {
+          "start": {
+            "line": 161,
+            "column": 7
+          },
+          "end": {
+            "line": 163,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.tripData returns a new instance of TripData class.\n * @typedef {Object} dataObjects.tripData\n * @property {string} id - Trip ID received from the Pricing API\n * @property {object} personInfo - Person details received from PersonDetails class\n\n ",
+            "range": [
+              6510,
+              6775
+            ],
+            "loc": {
+              "start": {
+                "line": 154,
+                "column": 0
+              },
+              "end": {
+                "line": 160,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.purchaseData returns a new instance of PurchaseData class.\n * @typedef {Object} dataObjects.purchaseData\n * @property {number} priceRequestId - This is the pricing ID , received from the pricing API\n * @property {string} clientNonce - ClientNonce can be GOLD, PREMIUM or PLATINUM\n * @property {string} priceTier - PriceTier\n * @property {object} tripData - This is received from the TripData Class\n * @property {string} pciTransactionId - Payment Transaction ID\n * @property {string} data - Data having payment related details of the purchased transaction\n ",
+            "range": [
+              6863,
+              7441
+            ],
+            "loc": {
+              "start": {
+                "line": 166,
+                "column": 0
+              },
+              "end": {
+                "line": 175,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        6776,
+        6860
+      ],
+      "loc": {
+        "start": {
+          "line": 161,
+          "column": 0
+        },
+        "end": {
+          "line": 163,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.tripData returns a new instance of TripData class.\n * @typedef {Object} dataObjects.tripData\n * @property {string} id - Trip ID received from the Pricing API\n * @property {object} personInfo - Person details received from PersonDetails class\n\n ",
+          "range": [
+            6510,
+            6775
+          ],
+          "loc": {
+            "start": {
+              "line": 154,
+              "column": 0
+            },
+            "end": {
+              "line": 160,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.purchaseData returns a new instance of PurchaseData class.\n * @typedef {Object} dataObjects.purchaseData\n * @property {number} priceRequestId - This is the pricing ID , received from the pricing API\n * @property {string} clientNonce - ClientNonce can be GOLD, PREMIUM or PLATINUM\n * @property {string} priceTier - PriceTier\n * @property {object} tripData - This is received from the TripData Class\n * @property {string} pciTransactionId - Payment Transaction ID\n * @property {string} data - Data having payment related details of the purchased transaction\n ",
+          "range": [
+            6863,
+            7441
+          ],
+          "loc": {
+            "start": {
+              "line": 166,
+              "column": 0
+            },
+            "end": {
+              "line": 175,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "purchaseData",
+          "range": [
+            7458,
+            7470
+          ],
+          "loc": {
+            "start": {
+              "line": 176,
+              "column": 16
+            },
+            "end": {
+              "line": 176,
+              "column": 28
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "priceRequestId",
+            "range": [
+              7471,
+              7485
+            ],
+            "loc": {
+              "start": {
+                "line": 176,
+                "column": 29
+              },
+              "end": {
+                "line": 176,
+                "column": 43
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "clientNonce",
+            "range": [
+              7487,
+              7498
+            ],
+            "loc": {
+              "start": {
+                "line": 176,
+                "column": 45
+              },
+              "end": {
+                "line": 176,
+                "column": 56
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "priceTier",
+            "range": [
+              7500,
+              7509
+            ],
+            "loc": {
+              "start": {
+                "line": 176,
+                "column": 58
+              },
+              "end": {
+                "line": 176,
+                "column": 67
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "tripData",
+            "range": [
+              7510,
+              7518
+            ],
+            "loc": {
+              "start": {
+                "line": 176,
+                "column": 68
+              },
+              "end": {
+                "line": 176,
+                "column": 76
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "pciTransactionId",
+            "range": [
+              7520,
+              7536
+            ],
+            "loc": {
+              "start": {
+                "line": 176,
+                "column": 78
+              },
+              "end": {
+                "line": 176,
+                "column": 94
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "data",
+            "range": [
+              7538,
+              7542
+            ],
+            "loc": {
+              "start": {
+                "line": 176,
+                "column": 96
+              },
+              "end": {
+                "line": 176,
+                "column": 100
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "PurchaseData",
+                  "range": [
+                    7559,
+                    7571
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 177,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 177,
+                      "column": 26
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "priceRequestId",
+                    "range": [
+                      7572,
+                      7586
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 177,
+                        "column": 27
+                      },
+                      "end": {
+                        "line": 177,
+                        "column": 41
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "clientNonce",
+                    "range": [
+                      7588,
+                      7599
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 177,
+                        "column": 43
+                      },
+                      "end": {
+                        "line": 177,
+                        "column": 54
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "priceTier",
+                    "range": [
+                      7601,
+                      7610
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 177,
+                        "column": 56
+                      },
+                      "end": {
+                        "line": 177,
+                        "column": 65
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "tripData",
+                    "range": [
+                      7611,
+                      7619
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 177,
+                        "column": 66
+                      },
+                      "end": {
+                        "line": 177,
+                        "column": 74
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "pciTransactionId",
+                    "range": [
+                      7621,
+                      7637
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 177,
+                        "column": 76
+                      },
+                      "end": {
+                        "line": 177,
+                        "column": 92
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "data",
+                    "range": [
+                      7639,
+                      7643
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 177,
+                        "column": 94
+                      },
+                      "end": {
+                        "line": 177,
+                        "column": 98
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  7555,
+                  7644
+                ],
+                "loc": {
+                  "start": {
+                    "line": 177,
+                    "column": 10
+                  },
+                  "end": {
+                    "line": 177,
+                    "column": 99
+                  }
+                }
+              },
+              "range": [
+                7547,
+                7646
+              ],
+              "loc": {
+                "start": {
+                  "line": 177,
+                  "column": 2
+                },
+                "end": {
+                  "line": 177,
+                  "column": 101
+                }
+              }
+            }
+          ],
+          "range": [
+            7543,
+            7648
+          ],
+          "loc": {
+            "start": {
+              "line": 176,
+              "column": 101
+            },
+            "end": {
+              "line": 178,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          7449,
+          7648
+        ],
+        "loc": {
+          "start": {
+            "line": 176,
+            "column": 7
+          },
+          "end": {
+            "line": 178,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * dataObjects.purchaseData returns a new instance of PurchaseData class.\n * @typedef {Object} dataObjects.purchaseData\n * @property {number} priceRequestId - This is the pricing ID , received from the pricing API\n * @property {string} clientNonce - ClientNonce can be GOLD, PREMIUM or PLATINUM\n * @property {string} priceTier - PriceTier\n * @property {object} tripData - This is received from the TripData Class\n * @property {string} pciTransactionId - Payment Transaction ID\n * @property {string} data - Data having payment related details of the purchased transaction\n ",
+            "range": [
+              6863,
+              7441
+            ],
+            "loc": {
+              "start": {
+                "line": 166,
+                "column": 0
+              },
+              "end": {
+                "line": 175,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": []
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        7442,
+        7648
+      ],
+      "loc": {
+        "start": {
+          "line": 176,
+          "column": 0
+        },
+        "end": {
+          "line": 178,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * dataObjects.purchaseData returns a new instance of PurchaseData class.\n * @typedef {Object} dataObjects.purchaseData\n * @property {number} priceRequestId - This is the pricing ID , received from the pricing API\n * @property {string} clientNonce - ClientNonce can be GOLD, PREMIUM or PLATINUM\n * @property {string} priceTier - PriceTier\n * @property {object} tripData - This is received from the TripData Class\n * @property {string} pciTransactionId - Payment Transaction ID\n * @property {string} data - Data having payment related details of the purchased transaction\n ",
+          "range": [
+            6863,
+            7441
+          ],
+          "loc": {
+            "start": {
+              "line": 166,
+              "column": 0
+            },
+            "end": {
+              "line": 175,
+              "column": 3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    43,
+    7648
+  ],
+  "loc": {
+    "start": {
+      "line": 4,
+      "column": 0
+    },
+    "end": {
+      "line": 178,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\n * Created by priyanka on 21/4/16.\n ",
+      "range": [
+        0,
+        42
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * dataObjects is a global object, which returns a new instance of each class.\n * @typedef {Object} dataObjects\n ",
+      "range": [
+        507,
+        626
+      ],
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 0
+        },
+        "end": {
+          "line": 19,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * dataObjects.flight returns a new instance of Flight class.\n * @typedef {Object} dataObjects.flight\n * @property {number} airlineCode - Airline code of the flight\n * @property {number} flightNumber - Flight number of the flight\n * @property {string} date - Departure date (format : YYYY-MM-DD)\n ",
+      "range": [
+        628,
+        931
+      ],
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 0
+        },
+        "end": {
+          "line": 27,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * dataObjects.passengerCounts returns a new instance of PassengerCount class.\n * @typedef {Object} dataObjects.passengerCounts\n * @property {number} adult - Count of adult passengers\n * @property {number} child - Count of child passengers\n * @property {number} infantInLap - Count of infant in lap passengers\n * @property {number} infantInSeat - Count of infant in seat passengers\n * @property {number} senior - Count of senior passengers\n ",
+      "range": [
+        1048,
+        1495
+      ],
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 0
+        },
+        "end": {
+          "line": 41,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*@typedef {Object} dataObjects.data\n ",
+      "range": [
+        1661,
+        1702
+      ],
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 0
+        },
+        "end": {
+          "line": 48,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * dataObjects.date returns a new instance of Date class.\n * @typedef {Object} dataObjects.date\n * @property {string} year - Year of booking\n * @property {string} month - Month of booking\n * @property {string} day - Date of booking\n ",
+      "range": [
+        1745,
+        1984
+      ],
+      "loc": {
+        "start": {
+          "line": 54,
+          "column": 0
+        },
+        "end": {
+          "line": 60,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * dataObjects.leg returns a new instance of Leg class.\n * @typedef {Object} dataObjects.leg\n * @property {string} aircraft - Aircraft is flying between an origin and destination.\n * @property {string} arrival - Flight arrival date in Jodatime format\n * @property {string} departure - Flight departure date in Jodatime format\n * @property {string} origin - Source origin of the flight\n * @property {string} destination - Flight Destination\n * @property {string} operatingDisclosure - Department of Transportation disclosure information on the actual operator of a flight in a code share.\n * @property {boolean} changePlane - Whether the passenger(s) have to change planes following this leg. Only applies to the next leg.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to leg\n ",
+      "range": [
+        2068,
+        2888
+      ],
+      "loc": {
+        "start": {
+          "line": 66,
+          "column": 0
+        },
+        "end": {
+          "line": 77,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * dataObjects.segment returns a new instance of Segment class.\n * @typedef {Object} dataObjects.segment\n * @property {number} duration - Flight duration\n * @property {object} flight - Flight object having flight details\n * @property {string} cabin - Booked Cabin in the Flight\n * @property {string} bookingCode - The booking code or class for this segment.\n * @property {number} bookingCodeCount - The number of seats available in this booking code on this segment.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to segment\n * @property {object[]} leg - Leg object comprising of the details about the hop taken by a flight.Segment can have multiple legs\n ",
+      "range": [
+        3116,
+        3815
+      ],
+      "loc": {
+        "start": {
+          "line": 83,
+          "column": 0
+        },
+        "end": {
+          "line": 93,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * dataObjects.slice returns a new instance of Slice class.\n * @typedef {Object} dataObjects.slice\n * @property {number} duration - Flight duration (to reach from source to the destination)\n * @property {object[]} segment - Segment object having flight data. Slice can have multiple segments\n ",
+      "range": [
+        4003,
+        4302
+      ],
+      "loc": {
+        "start": {
+          "line": 99,
+          "column": 0
+        },
+        "end": {
+          "line": 104,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * dataObjects.trip returns a new instance of Trip class.\n * @typedef {Object} dataObjects.trip\n * @property {boolean} missedConnections - -\n * @property {object} passengerCounts - Passenger count object having the total count of travelling passengers.\n * @property {string} data - [OPTIONAL] any client specific key-value pair specific to trip.\n * @property {object[]} slices - Slice object having trip info. Trip can have multiple slices.\n ",
+      "range": [
+        4390,
+        4838
+      ],
+      "loc": {
+        "start": {
+          "line": 110,
+          "column": 0
+        },
+        "end": {
+          "line": 117,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * dataObjects.dateOfBirth returns a new instance of DateOfBirth class.\n * @typedef {Object} dataObjects.dateOfBirth\n * @property {string} year - Birth year of the passenger\n * @property {string} month - Birth month of the passenger\n * @property {string} day - Birth date of the passenger\n ",
+      "range": [
+        4985,
+        5281
+      ],
+      "loc": {
+        "start": {
+          "line": 122,
+          "column": 0
+        },
+        "end": {
+          "line": 128,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * dataObjects.personInfo returns a new instance of PersonInfo class.\n * @typedef {Object} dataObjects.personInfo\n * @property {string} gender - Gender of the passenger\n * @property {string} firstName - First name of the passenger\n * @property {string} lastName - Last name of the passenger\n * @property {string} middleName - Middle name of the passenger\n * @property {object} dateOfBirth - Date Of Birth of the passenger\n * @property {string} phone - Phone number of the passenger\n * @property {string} email - Email of the passenger\n * @property {boolean} isDeciderToPay - Is he the decider to pay?\n * @property {boolean} isPayer - Is he the Payer?\n * @property {boolean} isPassenger - Is he the passenger himself?\n * @property {boolean} isBookingPerson - Is he the booking person?\n ",
+      "range": [
+        5378,
+        6169
+      ],
+      "loc": {
+        "start": {
+          "line": 133,
+          "column": 0
+        },
+        "end": {
+          "line": 147,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * dataObjects.tripData returns a new instance of TripData class.\n * @typedef {Object} dataObjects.tripData\n * @property {string} id - Trip ID received from the Pricing API\n * @property {object} personInfo - Person details received from PersonDetails class\n\n ",
+      "range": [
+        6510,
+        6775
+      ],
+      "loc": {
+        "start": {
+          "line": 154,
+          "column": 0
+        },
+        "end": {
+          "line": 160,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * dataObjects.purchaseData returns a new instance of PurchaseData class.\n * @typedef {Object} dataObjects.purchaseData\n * @property {number} priceRequestId - This is the pricing ID , received from the pricing API\n * @property {string} clientNonce - ClientNonce can be GOLD, PREMIUM or PLATINUM\n * @property {string} priceTier - PriceTier\n * @property {object} tripData - This is received from the TripData Class\n * @property {string} pciTransactionId - Payment Transaction ID\n * @property {string} data - Data having payment related details of the purchased transaction\n ",
+      "range": [
+        6863,
+        7441
+      ],
+      "loc": {
+        "start": {
+          "line": 166,
+          "column": 0
+        },
+        "end": {
+          "line": 175,
+          "column": 3
+        }
+      }
+    }
+  ]
+}

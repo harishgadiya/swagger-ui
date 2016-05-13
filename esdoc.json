@@ -1,0 +1,11 @@
+{
+    "source": "./esdoc/src",
+    "destination": "./esdoc/out/esdoc",
+    "manual": {
+        "overview": ["./esdoc/manual/HttpAPI.md"]
+    },
+    "test": {
+        "type": "mocha",
+        "source": "./esdoc/test"
+    }
+}

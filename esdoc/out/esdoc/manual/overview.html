@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Overview</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container manual-root" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <a data-ice="repoURL" href="https://github.com/swagger-api/swagger-ui.git" class="repo-url-github">Repository</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div class="manual-toc-root">
+  
+<div data-ice="manual" data-toc-name="overview">
+    <h1 class="manual-toc-title"><a href="manual/overview.html" data-ice="title">Overview</a></h1>
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="manual/overview.html#http-api-guide" data-ice="link">HTTP API Guide</a></li>
+<li data-ice="manualNav" class="indent-h3"><span class="manual-dot"></span><a href="manual/overview.html#accessing-js-objects" data-ice="link">Accessing JS objects</a></li>
+<li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="manual/overview.html#http-api-wrappers" data-ice="link">HTTP API Wrappers</a></li>
+<li data-ice="manualNav" class="indent-h3"><span class="manual-dot"></span><a href="manual/overview.html#api-documentation" data-ice="link">API Documentation</a></li>
+<li data-ice="manualNav" class="indent-h4"><span class="manual-dot"></span><a href="manual/overview.html#fbird-get-path-params-" data-ice="link">fBird.get(path, [params])</a></li>
+<li data-ice="manualNav" class="indent-h4"><span class="manual-dot"></span><a href="manual/overview.html#fbird-post-path-params-" data-ice="link">fBird.post(path, [params])</a></li>
+<li data-ice="manualNav" class="indent-h3"><span class="manual-dot"></span><a href="manual/overview.html#api-internal-functions" data-ice="link">API Internal Functions</a></li>
+</ul>
+  </div>
+<div data-ice="manual" data-toc-name="reference">
+    <h1 class="manual-toc-title"><a href="identifiers.html" data-ice="title">Reference</a></h1>
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="identifiers.html#class" data-ice="link">Class</a></li>
+<li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="identifiers.html#function" data-ice="link">Function</a></li>
+<li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="identifiers.html#typedef" data-ice="link">Typedef</a></li>
+</ul>
+  </div>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="github-markdown">
+  <div class="manual-breadcrumb-list">
+    <a href="./manual/./index.html">Manual</a>
+    <span>&#xBB;</span>
+    <span data-ice="title">Overview</span>
+  </div>
+  <div data-ice="content"><h1 id="http-api-guide">HTTP API Guide</h1>
+<p>Freebird&apos;s API helps you to call the rest endpoints of your Web Application.This let&apos;s the user know what is the price for the trip , do the purchase transaction and so on.
+To get started quickly, Freebird&apos;s API has been built using Javascript and can be integrated easily with you application.</p>
+<h3 id="accessing-js-objects">Accessing JS objects</h3>
+<p>To allow access to the Freebird API , user first needs to authenticate himself using the access token which he will receive once he successfully registers with the Freebird.</p>
+<p>a GET request to the /v1/authenticate endpoint for Authentication of the Auth Token.</p>
+<p><pre><code>
+ fBird.get(&apos;/v1/authenticate&apos;, authorizationBasic).then(function(result) {<br>
+   console.log(&apos;Access token is&apos;, result.message);
+ };
+</code></pre>
+where, authorizationBasic is &quot;userName:password&quot; - userName and password will be provided to you by Freebird on successful registration.
+
+### Client-side Javascript
+
+<pre><code>&lt;script src=&quot;./sdk.js&quot;&gt;&lt;/script&gt;</code></pre>
+Add the above Freebird SDK Script in your HTML or JS Files.
+
+Your Web Application can use our API to purchase the Freebird service by adding the trip price into the purchase data and return you the purchase ID.
+
+<pre><code>
+fBird.post(&apos;/v1/purchase&apos;, purchase, accessToken, headerChange) .then(function(result) {
+   console.log(&apos;purchase API result &apos;, result);
+});
+</code></pre>
+
+
+</p>
+<h1 id="http-api-wrappers">HTTP API Wrappers</h1>
+<p>The SDK provides easy access to all HTTP endpoints through the fBird.get, fBird.post, fBird.getToken methods. You can check for the API methods <a href="./manual/./../typedef/index.html#static-typedef-fBird">here</a>.</p>
+<h3 id="api-documentation">API Documentation</h3>
+<h4 id="fbird-get-path-params-">fBird.get(path, [params])</h4>
+<p>Execute a GET request.</p>
+<p>Parameters:</p>
+<p>path (String): the path to the requested resource e.g. &apos;/v1/authentication&apos;<br>
+params (Object, optional): an object of additional parameters to pass in the request.</p>
+<p>Returns: A promise that will resolve with the requested resource</p>
+<h4 id="fbird-post-path-params-">fBird.post(path, [params])</h4>
+<p>Execute a POST request.</p>
+<p>Parameters:</p>
+<p>path (String): the path to the requested resource e.g. &apos;/v1/pricing&apos;<br>
+params (Object, FormData optional): an object of additional parameters to pass in the request.</p>
+<p>Returns: A promise that will resolve with the requested resource</p>
+<h3 id="api-internal-functions">API Internal Functions</h3>
+<p>To know more about the internal API working, you can have a look over these <a href="./manual/./../function/index.html#static-function-request">methods</a>.</p>
+</div>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.4.6)</span></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
